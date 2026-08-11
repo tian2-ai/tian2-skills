@@ -1,0 +1,17 @@
+{
+  "name": "tian2-skills",
+  "owner": { "name": "Tian2", "url": "https://tian-2.com" },
+  "metadata": {
+    "description": "学生科研竞赛的方法论 skill 集。每个插件对应一个竞赛体系。"
+  },
+  "plugins": [
+    {
+      "name": "isef",
+      "displayName": "ISEF 国际科学与工程大奖赛",
+      "source": "./plugins/isef",
+      "version": "0.1.0",
+      "category": "education",
+      "description": "ISEF 全流程 12 个 skill：选题（含五届获奖作品查重）、合规表格决策、研究计划、摘要优化、展板设计、答辩准备、评审模拟、导师寻找、附属赛导航、数据分析辅导。"
+    }
+  ]
+}

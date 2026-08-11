@@ -1,0 +1,85 @@
+{
+  "source": "openalex",
+  "status": "ok",
+  "papers_per_year": {
+    "2021": 3,
+    "2023": 3,
+    "2024": 1
+  },
+  "papers_per_year_avg": 2,
+  "category_normalized_percentile": 5,
+  "trend_slope": -0.571,
+  "top_papers": [
+    {
+      "title": "The Haken\u2013Kelso\u2013Bunz (HKB) model: from matter to movement to mind",
+      "year": 2021,
+      "id": "W3194545635",
+      "cited_by_count": 61,
+      "why_it_matters": ""
+    },
+    {
+      "title": "A network control theory pipeline for studying the dynamics of the structural connectome",
+      "year": 2024,
+      "id": "W4401082395",
+      "cited_by_count": 41,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Synchronizing stochastic circadian oscillators in single cells of Neurospora crassa",
+      "year": 2016,
+      "id": "W2546313496",
+      "cited_by_count": 23,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Coordinated rhythms in animal species, including humans: Entrainment from bushcricket chorusing to the philharmonic orchestra",
+      "year": 2023,
+      "id": "W4386509595",
+      "cited_by_count": 21,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Dynamics of cellular motility",
+      "year": 1992,
+      "id": "W2798705705",
+      "cited_by_count": 13,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Mechanical activities of self-beating cardiomyocyte aggregates under mechanical compression",
+      "year": 2021,
+      "id": "W3183867006",
+      "cited_by_count": 12,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Developing systems theory in soil agroecology: incorporating heterogeneity and dynamic instability",
+      "year": 2023,
+      "id": "W4389090673",
+      "cited_by_count": 2,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Developing systems theory in soil agroecology: Incorporating heterogeneity and dynamic instability",
+      "year": 2023,
+      "id": "W4328050806",
+      "cited_by_count": 1,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Macrophages, Oscillators And Fish: Using Dynamical Systems To Examine Biological Problems",
+      "year": 2010,
+      "id": "W42228069",
+      "cited_by_count": 0,
+      "why_it_matters": ""
+    },
+    {
+      "title": "On microelectronic self-learning cognitive chip systems",
+      "year": 2016,
+      "id": "W2567403960",
+      "cited_by_count": 0,
+      "why_it_matters": ""
+    }
+  ],
+  "note": "percentile uses placeholder table; build data/category_distributions.json to refine"
+}

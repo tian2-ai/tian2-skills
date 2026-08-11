@@ -1,0 +1,13 @@
+# 凭据：模式匹配而非具体路径
+**/.env
+**/.env.*
+**/auth.json
+**/*credentials*
+*.pem
+*.key
+
+# 中间产物
+docs/_*.json
+**/.DS_Store
+**/._*
+**/__pycache__/

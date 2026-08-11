@@ -1,0 +1,56 @@
+{
+  "source": "openalex",
+  "status": "ok",
+  "papers_per_year": {
+    "2025": 2,
+    "2024": 1
+  },
+  "papers_per_year_avg": 1,
+  "category_normalized_percentile": 5,
+  "trend_slope": 1.0,
+  "top_papers": [
+    {
+      "title": "Modeling a Local Geoid: Application in Thies, Senegal",
+      "year": 2024,
+      "id": "W4404775526",
+      "cited_by_count": 1,
+      "why_it_matters": ""
+    },
+    {
+      "title": "A Novel Shallow Neural Network-Augmented Pose Estimator Based on Magneto-Inertial Sensors for Reference-Denied Environments",
+      "year": 2025,
+      "id": "W4416088419",
+      "cited_by_count": 1,
+      "why_it_matters": ""
+    },
+    {
+      "title": "InSAR Y\u00f6ntemi ile Kirazl\u0131 Alt\u0131n Madeni B\u00f6lgesinde Y\u00fczey Deformasyonlar\u0131 Belirlenmesi",
+      "year": 2025,
+      "id": "W7132045727",
+      "cited_by_count": 0,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Proceedings of the 11th United States-Japan natural resources panel for earthquake research, Napa Valley, California, November 16\u201318, 2016",
+      "year": 2017,
+      "id": "W2765267531",
+      "cited_by_count": 0,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Preface",
+      "year": 2018,
+      "id": "W4236197234",
+      "cited_by_count": 0,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Development of high-performance resonant accelerometers",
+      "year": null,
+      "id": "W7137629637",
+      "cited_by_count": 0,
+      "why_it_matters": ""
+    }
+  ],
+  "note": "percentile uses placeholder table; build data/category_distributions.json to refine"
+}

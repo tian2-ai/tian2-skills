@@ -1,0 +1,89 @@
+{
+  "source": "openalex",
+  "status": "ok",
+  "papers_per_year": {
+    "2025": 8,
+    "2022": 7,
+    "2023": 7,
+    "2020": 5,
+    "2026": 5,
+    "2024": 4,
+    "2021": 2
+  },
+  "papers_per_year_avg": 5,
+  "category_normalized_percentile": 17,
+  "trend_slope": 0.321,
+  "top_papers": [
+    {
+      "title": "Tracing the cosmic web",
+      "year": 2017,
+      "id": "W2612257175",
+      "cited_by_count": 338,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Ionizing Radiation and Complex DNA Damage: Quantifying the Radiobiological Damage Using Monte Carlo Simulations",
+      "year": 2020,
+      "id": "W3013719251",
+      "cited_by_count": 92,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Roadmap for unconventional computing with nanotechnology",
+      "year": 2024,
+      "id": "W4391836388",
+      "cited_by_count": 68,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Analysis of super-resolution single molecule localization microscopy data: A tutorial",
+      "year": 2022,
+      "id": "W4206317460",
+      "cited_by_count": 26,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Accelerating the Design of Self-Guided Microrobots in Time-Varying Magnetic Fields",
+      "year": 2023,
+      "id": "W4323838610",
+      "cited_by_count": 25,
+      "why_it_matters": ""
+    },
+    {
+      "title": "High-precision estimation of emitter positions using Bayesian grouping of localizations",
+      "year": 2022,
+      "id": "W4309837618",
+      "cited_by_count": 21,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Stochastic modeling of antibody binding predicts programmable migration on antigen patterns",
+      "year": 2022,
+      "id": "W4220986112",
+      "cited_by_count": 17,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Ensembles of Breathing Nucleosomes: A\u00a0Computational Study",
+      "year": 2019,
+      "id": "W2994989168",
+      "cited_by_count": 17,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Not-so-fast Kepler-1513: a perturbing planetary interloper in the exomoon corridor",
+      "year": 2023,
+      "id": "W4387442188",
+      "cited_by_count": 12,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Developing bioimaging and quantitative methods to study 3D genome",
+      "year": 2016,
+      "id": "W2388443421",
+      "cited_by_count": 11,
+      "why_it_matters": ""
+    }
+  ],
+  "note": "percentile uses placeholder table; build data/category_distributions.json to refine"
+}

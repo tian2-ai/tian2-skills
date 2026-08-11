@@ -1,0 +1,249 @@
+{
+  "source": "arxiv",
+  "status": "ok",
+  "total_results_returned": 20,
+  "papers_last_6mo": [
+    {
+      "title": "Squeezing Capacity from Multimodal Large Language Models for Subject-driven Generation",
+      "year": 2026,
+      "id": "2605.26111v1",
+      "published": "2026-05-25T17:59:35Z"
+    },
+    {
+      "title": "Reinforcing Few-step Generators via Reward-Tilted Distribution Matching",
+      "year": 2026,
+      "id": "2605.26108v1",
+      "published": "2026-05-25T17:59:21Z"
+    },
+    {
+      "title": "Paris 2.0: A Decentralized Diffusion Model for Video Generation",
+      "year": 2026,
+      "id": "2605.26064v1",
+      "published": "2026-05-25T17:27:22Z"
+    },
+    {
+      "title": "Everything at Every Scale: Scale-Invariant Diffusion with Continuous Super-Resolution",
+      "year": 2026,
+      "id": "2605.26032v1",
+      "published": "2026-05-25T17:01:21Z"
+    },
+    {
+      "title": "AdvantageFlow: Advantage-Weighted Least Squares for RL in Flow Models",
+      "year": 2026,
+      "id": "2605.26013v1",
+      "published": "2026-05-25T16:32:14Z"
+    },
+    {
+      "title": "OMGTex: One-stage Multi-style Facial Texture Reconstruction without Geometry Guidance",
+      "year": 2026,
+      "id": "2605.25778v1",
+      "published": "2026-05-25T12:26:56Z"
+    },
+    {
+      "title": "Concept Unlearning via Cross-Attention Activation Projection for Diffusion Models",
+      "year": 2026,
+      "id": "2605.25765v1",
+      "published": "2026-05-25T12:18:47Z"
+    },
+    {
+      "title": "AI-T2I: Aggregating-and-Isolating Cross-Attention to Diffusion Models for Text-to-Image Synthesis",
+      "year": 2026,
+      "id": "2605.25763v1",
+      "published": "2026-05-25T12:17:32Z"
+    },
+    {
+      "title": "DRM: Diffusion-based Reward Model With Step-wise Guidance",
+      "year": 2026,
+      "id": "2605.25661v1",
+      "published": "2026-05-25T10:11:32Z"
+    },
+    {
+      "title": "Enhancing Single-Image Facial Demorphing using Multimodal Large Language Models",
+      "year": 2026,
+      "id": "2605.25442v1",
+      "published": "2026-05-25T05:40:32Z"
+    },
+    {
+      "title": "CollectionLoRA: Collecting 50 Effects in 1 LoRA via Multi-Teacher On-Policy Distillation",
+      "year": 2026,
+      "id": "2605.25378v1",
+      "published": "2026-05-25T03:07:01Z"
+    },
+    {
+      "title": "Teaching Video Generators to Remember: Eliciting Dynamic Memory for Out-of-Sight State Evolution",
+      "year": 2026,
+      "id": "2605.25333v1",
+      "published": "2026-05-25T01:30:41Z"
+    },
+    {
+      "title": "DeltaCam: Differential Intrinsic Camera Modeling for Video Generation",
+      "year": 2026,
+      "id": "2605.25266v1",
+      "published": "2026-05-24T21:39:54Z"
+    },
+    {
+      "title": "Guess the Unified Model: How Much Can We Recover from Generated Images?",
+      "year": 2026,
+      "id": "2605.25254v1",
+      "published": "2026-05-24T20:59:08Z"
+    },
+    {
+      "title": "Multi-Objective Learning for Diffusion Models: A Statistical Theory under Semi-Supervised Learning",
+      "year": 2026,
+      "id": "2605.25210v1",
+      "published": "2026-05-24T18:19:40Z"
+    },
+    {
+      "title": "Injecting Image Guidance into Text-Conditioned Diffusion Models at Inference",
+      "year": 2026,
+      "id": "2605.25191v1",
+      "published": "2026-05-24T17:47:21Z"
+    },
+    {
+      "title": "Inference-Time Alignment of Diffusion Models via Trust-Region Iterative Twisted Sequential Monte Carlo",
+      "year": 2026,
+      "id": "2605.25123v1",
+      "published": "2026-05-24T15:08:52Z"
+    },
+    {
+      "title": "D3S2: Diffusion-Guided Dataset Distillation for Semantic Segmentation",
+      "year": 2026,
+      "id": "2605.25022v1",
+      "published": "2026-05-24T12:01:38Z"
+    },
+    {
+      "title": "Three-Step Conditional Diffusion 3D Reconstruction for Light-Field Microscopy",
+      "year": 2026,
+      "id": "2605.24959v1",
+      "published": "2026-05-24T09:16:35Z"
+    },
+    {
+      "title": "BFS: Back-to-Front Layered Image Synthesis via Knowledge Transfer",
+      "year": 2026,
+      "id": "2605.24894v1",
+      "published": "2026-05-24T06:46:52Z"
+    }
+  ],
+  "all_papers": [
+    {
+      "title": "Squeezing Capacity from Multimodal Large Language Models for Subject-driven Generation",
+      "year": 2026,
+      "id": "2605.26111v1",
+      "published": "2026-05-25T17:59:35Z"
+    },
+    {
+      "title": "Reinforcing Few-step Generators via Reward-Tilted Distribution Matching",
+      "year": 2026,
+      "id": "2605.26108v1",
+      "published": "2026-05-25T17:59:21Z"
+    },
+    {
+      "title": "Paris 2.0: A Decentralized Diffusion Model for Video Generation",
+      "year": 2026,
+      "id": "2605.26064v1",
+      "published": "2026-05-25T17:27:22Z"
+    },
+    {
+      "title": "Everything at Every Scale: Scale-Invariant Diffusion with Continuous Super-Resolution",
+      "year": 2026,
+      "id": "2605.26032v1",
+      "published": "2026-05-25T17:01:21Z"
+    },
+    {
+      "title": "AdvantageFlow: Advantage-Weighted Least Squares for RL in Flow Models",
+      "year": 2026,
+      "id": "2605.26013v1",
+      "published": "2026-05-25T16:32:14Z"
+    },
+    {
+      "title": "OMGTex: One-stage Multi-style Facial Texture Reconstruction without Geometry Guidance",
+      "year": 2026,
+      "id": "2605.25778v1",
+      "published": "2026-05-25T12:26:56Z"
+    },
+    {
+      "title": "Concept Unlearning via Cross-Attention Activation Projection for Diffusion Models",
+      "year": 2026,
+      "id": "2605.25765v1",
+      "published": "2026-05-25T12:18:47Z"
+    },
+    {
+      "title": "AI-T2I: Aggregating-and-Isolating Cross-Attention to Diffusion Models for Text-to-Image Synthesis",
+      "year": 2026,
+      "id": "2605.25763v1",
+      "published": "2026-05-25T12:17:32Z"
+    },
+    {
+      "title": "DRM: Diffusion-based Reward Model With Step-wise Guidance",
+      "year": 2026,
+      "id": "2605.25661v1",
+      "published": "2026-05-25T10:11:32Z"
+    },
+    {
+      "title": "Enhancing Single-Image Facial Demorphing using Multimodal Large Language Models",
+      "year": 2026,
+      "id": "2605.25442v1",
+      "published": "2026-05-25T05:40:32Z"
+    },
+    {
+      "title": "CollectionLoRA: Collecting 50 Effects in 1 LoRA via Multi-Teacher On-Policy Distillation",
+      "year": 2026,
+      "id": "2605.25378v1",
+      "published": "2026-05-25T03:07:01Z"
+    },
+    {
+      "title": "Teaching Video Generators to Remember: Eliciting Dynamic Memory for Out-of-Sight State Evolution",
+      "year": 2026,
+      "id": "2605.25333v1",
+      "published": "2026-05-25T01:30:41Z"
+    },
+    {
+      "title": "DeltaCam: Differential Intrinsic Camera Modeling for Video Generation",
+      "year": 2026,
+      "id": "2605.25266v1",
+      "published": "2026-05-24T21:39:54Z"
+    },
+    {
+      "title": "Guess the Unified Model: How Much Can We Recover from Generated Images?",
+      "year": 2026,
+      "id": "2605.25254v1",
+      "published": "2026-05-24T20:59:08Z"
+    },
+    {
+      "title": "Multi-Objective Learning for Diffusion Models: A Statistical Theory under Semi-Supervised Learning",
+      "year": 2026,
+      "id": "2605.25210v1",
+      "published": "2026-05-24T18:19:40Z"
+    },
+    {
+      "title": "Injecting Image Guidance into Text-Conditioned Diffusion Models at Inference",
+      "year": 2026,
+      "id": "2605.25191v1",
+      "published": "2026-05-24T17:47:21Z"
+    },
+    {
+      "title": "Inference-Time Alignment of Diffusion Models via Trust-Region Iterative Twisted Sequential Monte Carlo",
+      "year": 2026,
+      "id": "2605.25123v1",
+      "published": "2026-05-24T15:08:52Z"
+    },
+    {
+      "title": "D3S2: Diffusion-Guided Dataset Distillation for Semantic Segmentation",
+      "year": 2026,
+      "id": "2605.25022v1",
+      "published": "2026-05-24T12:01:38Z"
+    },
+    {
+      "title": "Three-Step Conditional Diffusion 3D Reconstruction for Light-Field Microscopy",
+      "year": 2026,
+      "id": "2605.24959v1",
+      "published": "2026-05-24T09:16:35Z"
+    },
+    {
+      "title": "BFS: Back-to-Front Layered Image Synthesis via Knowledge Transfer",
+      "year": 2026,
+      "id": "2605.24894v1",
+      "published": "2026-05-24T06:46:52Z"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "source": "pubmed",
+  "status": "ok",
+  "papers": [
+    {
+      "title": "De novo design of DNA origami with a generative diffusion model.",
+      "year": 2026,
+      "id": "42185313",
+      "pmid": "42185313",
+      "abstract": "Generative models that have advanced inverse design in protein engineering can be extended to DNA origami to explore broader design spaces enabling complex geometries and functions for emerging nanotechnologies. However, progress in generative DNA origami design has been limited by the lack of large"
+    },
+    {
+      "title": "DNA origami nanotweezer as a programmable nanoligand holder: A hybrid ANM-oxDNA simulation study.",
+      "year": 2026,
+      "id": "42172935",
+      "pmid": "42172935",
+      "abstract": "DNA origami nanodevices enable programmable control of nanoscale motion and force transduction through sequence-defined structural design. Understanding how ligand attachment geometry affects their mechanical response requires quantitative modeling frameworks that couple molecular recognition to str"
+    },
+    {
+      "title": "Cooperativity, entropy, and effective concentration in DNA origami self-replication.",
+      "year": 2026,
+      "id": "42160423",
+      "pmid": "42160423",
+      "abstract": "Many new structures, machines, active materials, and devices have been produced in the rapidly growing field of DNA nanotechnology. However, the thermodynamics of complex DNA assemblies remains not well understood. Here, we treat the assembly, melting, and activation of more complex structures where"
+    },
+    {
+      "title": "Optimized Functional Covalent Immobilization of DNA on Plasma-Activated Surfaces for Biosensing Applications.",
+      "year": 2026,
+      "id": "42149733",
+      "pmid": "42149733",
+      "abstract": "Surface-immobilized DNA enables a broad range of biosensing technologies, from DNA aptamer sequences that directly bind targets to programmable tethers that bind other probe molecules such as antibodies and even to tether DNA nanostructures to achieve controlled nanoscale placement of sensing groups"
+    },
+    {
+      "title": "Nanoscale Spatial Engineering of Ligands Using DNA Origami for Precise Modulation of Membrane Receptor Signaling.",
+      "year": 2026,
+      "id": "42144542",
+      "pmid": "42144542",
+      "abstract": "Dimerization or multimerization of surface membrane receptors is essential for transmitting extracellular recognition events across the plasma membrane, triggering intracellular signaling cascades, and regulating a wide range of cellular functions. Ligands typically act as inducers for these process"
+    },
+    {
+      "title": "Modular Assembly of Higher-Order DNA Nanotube Tile Nanostructures Using DNA Annular Scaffolds.",
+      "year": 2026,
+      "id": "42139459",
+      "pmid": "42139459",
+      "abstract": "Inspired by natural systems, synthetic biology employs diverse biomaterials to construct artificial systems on the basis of the principle of modular assembly. However, the rational construction of predictable, stable, and logically controllable higher-order nanostructures remains challenging. DNA na"
+    },
+    {
+      "title": "Vesicle-Templated Self-Assembly of Programmable Freestanding Multi-\u03bcm DNA Shells.",
+      "year": 2026,
+      "id": "42130031",
+      "pmid": "42130031",
+      "abstract": "In the quest to create increasingly complex synthetic cell-mimicking systems, diverse DNA nanostructures have been developed to coat, permeabilize, sculpt, or otherwise functionalize lipid vesicles or used as scaffolds to direct vesicle growth. Here, we introduce a simple, broadly applicable method "
+    },
+    {
+      "title": "Site-Specific",
+      "year": 2026,
+      "id": "42108594",
+      "pmid": "42108594",
+      "abstract": "The addressability of DNA origami nanostructures enables the site-specific positioning of functional materials with nanometer-scale precision. DNA origami-templated gold nanoparticles have attracted broad interest due to their tunable optical and electronic properties. In this study, we develop a bo"
+    },
+    {
+      "title": "Bioproduction of \u223c10 knt single-stranded DNA for constructing large DNA origami structures.",
+      "year": 2026,
+      "id": "42100002",
+      "pmid": "42100002",
+      "abstract": ""
+    },
+    {
+      "title": "Classifying Multistate DNA Origami: An Automated Approach with Minimal Labeling and Confidence-Based Filtering.",
+      "year": 2026,
+      "id": "42089688",
+      "pmid": "42089688",
+      "abstract": "DNA origami nanostructures can adopt multiple conformational states, making an accurate and rapid classification essential for advancing nanoscale fabrication. Although atomic force microscopy (AFM) provides indispensable structural validation, manual per-object labeling for classification is a pers"
+    }
+  ],
+  "total_hits": 10
+}

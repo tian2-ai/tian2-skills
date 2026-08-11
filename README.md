@@ -1,0 +1,52 @@
+# tian2-skills
+
+学生科研竞赛的方法论 skill 集，按竞赛体系分插件发布。
+
+## 安装
+
+```
+/plugin marketplace add tian2-ai/tian2-skills
+/plugin install isef@tian2-skills
+```
+
+装好后 skill 以 `isef:topic-finder` 这样的命名空间出现，不会和其他来源的同名 skill 冲突。
+
+## 现有插件
+
+| 插件 | skill 数 | 内容 |
+|---|---|---|
+| `isef` | 12 | 选题、合规表格、研究计划、摘要、展板、答辩、评审模拟、导师寻找、附属赛导航、数据分析辅导 |
+
+后续会陆续加入 conrad、yau、sts、epq、himcm 等竞赛体系。
+
+## 为什么按竞赛分插件，而不是一次装全部
+
+skill 的描述会占用上下文预算（默认为上下文的 2%，最低 16,000 字符）。把所有竞赛的 skill 一次性装上，描述会挤占真正干活的空间，模型也更容易在一堆不相关的 skill 里挑错。做 ISEF 就只装 `isef`。
+
+## 使用者需要自备的东西
+
+**ISEF 获奖作品语料**（可选，但影响一个评分维度）
+
+`isef-topic-finder` 的查重维度（M4）依赖本地的 ISEF 获奖作品语料。设置 `ISEF_SCRAPE_ROOT` 指向语料目录，或放在 `~/ISEF-Scrape/output`。
+
+**语料不随本插件分发**——它是抓取产物，体量大且非本 skill 的内容。**缺失时不会静默出错**：脚本返回 `status: "unavailable"`，skill 会跳过 M4 维度、在输出中标注 `missing_sources`、并下调置信度。
+
+**ISEF 官方规则与表格 PDF**
+
+各 skill 的 `references/` 里已含逐条提取的规则要点，日常使用不需要原始 PDF。需要原件时请自行从 [societyforscience.org](https://www.societyforscience.org/isef/international-rules/) 取得——官方文件不在本仓库再分发之列。
+
+## 与作者本机版本的关系
+
+这些 skill 的开发版在一个私有仓库里，那边的路径与工作流是绑定作者本机的。本仓库是**为分发而改造过的版本**，改了什么、为什么改，逐条记录在 [`docs/ISEF-分发改动记录.md`](docs/ISEF-分发改动记录.md)。
+
+改动只涉及可移植性，**不改变任何 skill 的方法论、判据或输出格式**。12 个 skill 里有 7 个完全未改。
+
+## 这些 skill 不做什么
+
+- **不预测奖级。** 决定结果的是答辩表现，那是任何模型都观察不到的变量。评分输出是区间，不是点值。
+- **不替你写论文或研究计划。** 它们产出的是框架、判据、检查清单与失败模式警告。
+- **不代替官方规则。** 规则每年修订，`references/` 里的提取有版本日期，过期请重新核对官方来源。
+
+## 许可
+
+skill 内容为原创方法论。引用的第三方规则与文献均标注出处，不含再分发的第三方版权材料。

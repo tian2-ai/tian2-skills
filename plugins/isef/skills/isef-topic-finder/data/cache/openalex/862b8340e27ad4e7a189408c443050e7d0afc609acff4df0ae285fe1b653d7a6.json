@@ -1,0 +1,89 @@
+{
+  "source": "openalex",
+  "status": "ok",
+  "papers_per_year": {
+    "2025": 8,
+    "2022": 4,
+    "2021": 2,
+    "2024": 2,
+    "2020": 1,
+    "2023": 1,
+    "2026": 1
+  },
+  "papers_per_year_avg": 2,
+  "category_normalized_percentile": 5,
+  "trend_slope": 0.357,
+  "top_papers": [
+    {
+      "title": "Non-locality in Granular Flow: Phenomenology and Modeling Approaches",
+      "year": 2019,
+      "id": "W2965963683",
+      "cited_by_count": 102,
+      "why_it_matters": ""
+    },
+    {
+      "title": "The dynamics of granular flow from a silo with two symmetric openings",
+      "year": 2019,
+      "id": "W2908933953",
+      "cited_by_count": 31,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Granular flow experiment using artificial gravity generator at International Space Station",
+      "year": 2023,
+      "id": "W4385660820",
+      "cited_by_count": 28,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Wedge-Shaped Hopper Design for Milled Woody Biomass Flow",
+      "year": 2022,
+      "id": "W4310715509",
+      "cited_by_count": 21,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Flux of granular particles through a shaken sieve plate",
+      "year": 2015,
+      "id": "W2201141471",
+      "cited_by_count": 13,
+      "why_it_matters": ""
+    },
+    {
+      "title": "A method to prevent clogging and clustering in microfluidic systems using microbubble streaming",
+      "year": 2024,
+      "id": "W4400243054",
+      "cited_by_count": 11,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Collisional regime during the discharge of a two-dimensional silo",
+      "year": 2022,
+      "id": "W4224277272",
+      "cited_by_count": 9,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Behaviors of lunar regolith simulants under varying gravitational conditions",
+      "year": 2025,
+      "id": "W4414702235",
+      "cited_by_count": 5,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Newton vs Stokes : competing forces in granular matter",
+      "year": 2009,
+      "id": "W2101405582",
+      "cited_by_count": 4,
+      "why_it_matters": ""
+    },
+    {
+      "title": "A framework for continuum simulation of granular flow",
+      "year": 2017,
+      "id": "W2617565359",
+      "cited_by_count": 4,
+      "why_it_matters": ""
+    }
+  ],
+  "note": "percentile uses placeholder table; build data/category_distributions.json to refine"
+}
