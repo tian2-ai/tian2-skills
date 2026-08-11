@@ -9,7 +9,7 @@ description: >
   Chinese versions when requested. Use this skill whenever the student says "draft my research
   plan", "ISEF research plan", "项目研究方案", "Form 1A research plan", or has finished their
   topic discovery and needs the document required for SRC approval.
-argument-hint: [--depth light|standard|comprehensive] [--lang en|zh|both]
+argument-hint: '[--depth light|standard|comprehensive] [--lang en|zh|both]'
 allowed-tools: Read, Grep, Glob, Bash, Skill
 rubric_version: 2026.1
 ---
@@ -139,5 +139,5 @@ Disclose this assistance in the AI-Use section of your Research Plan per ISEF
 
 ## Source provenance
 
-Section structure extracted from 「ISEF 研究手册 · 项目流程与类目图（2026-05-01 版）」 Stage 1, which cites
-ISEF Book.pdf lines 230-267 and 240-244 verbatim.
+Section structure is packaged in `references/plan-structure.md`, extracted from the playbook's
+Stage 1 and ISEF Book.pdf lines 230-267 and 240-244.

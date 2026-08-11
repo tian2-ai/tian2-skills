@@ -16,7 +16,7 @@ description: >
   committing time to a project. Also trigger when a teacher, mentor, or parent
   asks how to vet a student topic for a fair, or when someone mentions ISEF
   category fit, Regeneron STS topic selection, or CASTIC affiliated-fair planning.
-argument-hint: [discover|score "topic text"] [--lang en|zh|both] [--depth light|medium|heavy]
+argument-hint: '[discover|score "topic text"] [--lang en|zh|both] [--depth light|medium|heavy]'
 allowed-tools: Read, Grep, Glob, Bash, WebFetch, WebSearch, Skill
 rubric_version: 2026.1
 ---
@@ -144,12 +144,12 @@ scripts/
   search_perplexity.sh                ← skill-wrap (only one)
   search_isef_archive.py              ← local TF-IDF
 
-> **⚠️ 本地语料不是随本 skill 分发的。** `search_isef_archive.py` 从 `$ISEF_SCRAPE_ROOT`
-> 或 `~/ISEF-Scrape/output` 读取 ISEF 获奖作品语料。**语料不存在时它返回
+> **⚠️ 语料可能不存在。** `search_isef_archive.py` 从 `$ISEF_SCRAPE_ROOT` 或
+> `~/ISEF-Scrape/output` 读取 ISEF 获奖作品语料。**语料缺失时它返回
 > `status: "unavailable"` 且 `m4_value: 0`。**
 >
-> **在使用 m4 之前必须先检查 `status`。** `m4_value: 0` 有两种截然不同的含义——
-> "查过了，没有相似前作"（真信号）与"根本没查成"（无信号）。把后者当成前者，
+> **使用 m4 之前必须先检查 `status`。** `m4_value: 0` 有两种截然不同的含义——
+> 「查过了，没有相似前作」（真信号）与「根本没查成」（无信号）。把后者当成前者，
 > 会让一个未经查重的课题看起来通过了查重。
 >
 > 若 `status` 为 `unavailable`：**不要把 M4 计入总分**，在输出中标注
@@ -169,8 +169,8 @@ data/
 
 ## Status (skeleton phase)
 
-This skill is in **Phase 1 skeleton** as of 2026-05-26. Phases per the plan at
-「isef-topic-finder 设计方案（2026-05-25 版）」:
+The original phased implementation plan is bundled at `references/development-plan.md` so
+maintenance and provenance do not depend on the project workspace:
 
 - ✅ Phase 0 — prerequisite verification
 - 🟡 Phase 1 — skeleton (THIS COMMIT)
@@ -183,5 +183,4 @@ This skill is in **Phase 1 skeleton** as of 2026-05-26. Phases per the plan at
 - ⏳ Phase 7 — cross-skill handoff + annual recalibration tickler
 
 Until Phase 5 completes, this skill emits the skeleton's reference-file map and the rubric design; it does not yet compute scores end-to-end. If a user invokes it now, tell them so honestly and point them at the plan.
-
 

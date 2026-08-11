@@ -10,7 +10,7 @@ description: >
   mentions "ISEF abstract", "abstract review", "shorten my abstract", "改简介", "摘要修改",
   "250 words", or has finished experimentation and is preparing the Official Abstract for
   SRC submission and booth display.
-argument-hint: [--max-words 250] [--lang en|zh|both] [--target-grade nine|ten|eleven|twelve]
+argument-hint: '[--max-words 250] [--lang en|zh|both] [--target-grade nine|ten|eleven|twelve]'
 allowed-tools: Read, Grep, Glob, Bash, Skill
 rubric_version: 2026.1
 ---
@@ -172,8 +172,8 @@ references/
 
 ## Source provenance
 
-Word count and one-page rule: 「ISEF 研究手册 · 项目流程与类目图（2026-05-01 版）」 Stage 4, citing
-Book.pdf line 241.
+Word count and one-page rule: bundled `references/abstract-rules.md`, extracted from the
+playbook's Stage 4 and ISEF Book.pdf line 241.
 
 Display requirement: same playbook source citing DS-Rules.pdf.
 

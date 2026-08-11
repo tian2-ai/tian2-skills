@@ -13,7 +13,7 @@ description: >
   "design my ISEF poster", "make a science fair poster", "poster template", "海报模板",
   "学术海报", "printable poster", or has results and needs to produce the physical poster
   for booth display.
-argument-hint: [--format latex|powerpoint|both] [--size A0|36x48|48x36|custom] [--lang en|zh|both]
+argument-hint: '[--format latex|powerpoint|both] [--size A0|36x48|48x36|custom] [--lang en|zh|both]'
 allowed-tools: Read, Write, Bash, Skill, Grep, Glob
 rubric_version: 2026.1
 ---
@@ -182,8 +182,8 @@ scripts/
 
 ## Source provenance
 
-Booth dimensions, lighting, laser limits, required display items: ISEF 2026 DS-Rules.pdf via
-「ISEF 研究手册 · 合规表格决策树（2026-05-01 版）」 §6.
+Booth dimensions, lighting, laser limits, and required display items: ISEF 2026 DS-Rules.pdf,
+packaged for runtime lookup in `references/display-rules.md`.
 
 Poster size conventions: https://www.posterpresentations.com/free-poster-templates.html (verified 2026-05-27 — A0 = 841×1189mm; 36×48, 48×72 inch standards).
 

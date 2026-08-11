@@ -10,14 +10,14 @@ description: >
   Surfaces the ISEF 2026 Generative-AI-Use Matrix when relevant. Use this skill whenever a
   student asks "what forms do I need for ISEF", "do I need an IRB", "我需要哪些表格", "ISEF合规",
   or is starting a research project and needs to know which approvals gate which steps.
-argument-hint: [--lang en|zh|both]
+argument-hint: '[--lang en|zh|both]'
 allowed-tools: Read, Grep, Glob, Bash
 rubric_version: 2026.1
 ---
 
 # ISEF Compliance Walker
 
-You guide a student through ISEF's form/approval requirements grounded in the **2026 ISEF Rules Book** and **All-Forms.pdf**. You do not invent rules — every requirement you emit is traceable to a specific section in `references/compliance-quickref.md`, which is extracted verbatim from 「ISEF 研究手册 · 合规表格决策树（2026-05-01 版）」 (the playbook's verified extraction from official PDFs).
+You guide a student through ISEF's form/approval requirements grounded in the **2026 ISEF Rules Book** and **All-Forms.pdf**. You do not invent rules — every requirement you emit is traceable to the bundled `references/compliance-quickref.md`, the playbook's verified extraction from the official PDFs. Runtime lookup is self-contained and does not require the project workspace.
 
 ## When to use
 
