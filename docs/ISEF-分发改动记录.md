@@ -2,14 +2,14 @@
 
 **源**：`ai-config/skills/mine/`（私有工作副本，持续变动）
 **本仓库**：派生产物，由 `sync-from-source.py` 重新生成
-**本次**：12 个 skill，7 处改动，涉及 4 个 skill
+**本次**：44 个 skill，29 处改动，涉及 8 个 skill
 
 改动只涉及**可移植性**，不改变任何 skill 的方法论、判据或输出格式。
 所有规则都写在 `sync-from-source.py` 里——**没有手工改动**。改不了的会让同步失败，而不是悄悄发布。
 
 ---
 
-## 出处标注去本机路径（6 处）
+## 出处标注去本机路径（21 处）
 
 「本文件提取自 X」式的溯源标注。**不是运行时依赖**——被引用的内容早已固化在各 skill 自己的 `references/` 里。换成来源名称后溯源保留，不再依赖任何人的目录布局。
 
@@ -97,6 +97,216 @@ Patterns mined from 「ISEF 获奖作品语料（ISEF-Scrape）」 (PHYS021 deep
 **Source:** 「ISEF 研究手册 · 项目流程与类目图（2026-05-01 版）」 (verified extract from official 2026 Rules Book PDF).
 ```
 
+### `sts-data-analysis-tutor` — `references/analysis-rigor-checklist.md`
+
+**改前**
+
+```
+- /Volumes/Mac-Mini/workspaces/tian2-edu/STS/Regeneron_STS_Application_Questions_2026.txt -- Task 4 box (e) analyzing data; Q14 limitations (200w).
+```
+
+**改后**
+
+```
+- 「Regeneron STS 申请问题全文（2026 届）」 -- Task 4 box (e) analyzing data; Q14 limitations (200w).
+```
+
+### `sts-data-analysis-tutor` — `references/analysis-rigor-checklist.md`
+
+**改前**
+
+```
+- /Volumes/Mac-Mini/workspaces/tian2-edu/STS/2024/STS_Top400_Winning_Criteria.md -- cross-validation as strongest signal; ANOVA->Kruskal-Wallis; DFT+Lomb-Scargle; transfer-matrix vs ODE; analytic toy benchmark <0.1%; pip
+```
+
+**改后**
+
+```
+- 「STS Top-400 获奖标准分析（2024 届，11 位 OTT 获奖者通读）」 -- cross-validation as strongest signal; ANOVA->Kruskal-Wallis; DFT+Lomb-Scargle; transfer-matrix vs ODE; analytic toy benchmark <0.1%; pipeline validation; rigorous null win
+```
+
+### `sts-data-analysis-tutor` — `references/analysis-rigor-checklist.md`
+
+**改前**
+
+```
+- /Volumes/Mac-Mini/workspaces/tian2-edu/STS/2024/OTT_Selection_Analysis.md -- category/evaluator variance (r approx 0.18).
+```
+
+**改后**
+
+```
+- 「STS On-The-Table 选拔机制分析（2024 届）」 -- category/evaluator variance (r approx 0.18).
+```
+
+### `sts-data-analysis-tutor` — `references/analysis-rigor-checklist.md`
+
+**改前**
+
+```
+- /Volumes/Mac-Mini/workspaces/tian2-edu/STS/rubric.json -- Scientific Merit -> Scientific Analysis.
+```
+
+**改后**
+
+```
+- 「STS 四维评分标准（rubric.json）」 -- Scientific Merit -> Scientific Analysis.
+```
+
+### `sts-judging-criteria` — `references/rubric-4-criteria.md`
+
+**改前**
+
+```
+> Verbatim from `/Volumes/Mac-Mini/workspaces/tian2-edu/STS/rubric.json`. Do not invent or paraphrase
+```
+
+**改后**
+
+```
+> Verbatim from 「STS 四维评分标准（rubric.json）」. Do not invent or paraphrase
+```
+
+### `sts-judging-criteria` — `references/rubric-4-criteria.md`
+
+**改前**
+
+```
+`/Volumes/Mac-Mini/workspaces/tian2-edu/STS/rubric.json` — criteria, sub-criteria, focus areas,
+```
+
+**改后**
+
+```
+「STS 四维评分标准（rubric.json）」 — criteria, sub-criteria, focus areas,
+```
+
+### `sts-judging-criteria` — `references/selection-mechanics.md`
+
+**改前**
+
+```
+> Verified from `/Volumes/Mac-Mini/workspaces/tian2-edu/STS/2024/OTT_Selection_Analysis.md`, which
+```
+
+**改后**
+
+```
+> Verified from 「STS On-The-Table 选拔机制分析（2024 届）」, which
+```
+
+### `sts-judging-criteria` — `references/selection-mechanics.md`
+
+**改前**
+
+```
+- `/Volumes/Mac-Mini/workspaces/tian2-edu/STS/2024/OTT_Selection_Analysis.md` — OTT union rule,
+```
+
+**改后**
+
+```
+- 「STS On-The-Table 选拔机制分析（2024 届）」 — OTT union rule,
+```
+
+### `sts-judging-criteria` — `references/selection-mechanics.md`
+
+**改前**
+
+```
+- `/Volumes/Mac-Mini/workspaces/tian2-edu/STS/2024/On_The_Table_2025.xlsx` +
+```
+
+**改后**
+
+```
+- 「STS On-The-Table 名次表（2025 届）」 +
+```
+
+### `sts-judging-criteria` — `references/selection-mechanics.md`
+
+**改前**
+
+```
+- `/Volumes/Mac-Mini/workspaces/tian2-edu/STS/rubric.json` — the 4-criterion scoring the ranks are built from.
+```
+
+**改后**
+
+```
+- 「STS 四维评分标准（rubric.json）」 — the 4-criterion scoring the ranks are built from.
+```
+
+### `sts-rules-wizard` — `references/task3-decision-tree.md`
+
+**改前**
+
+```
+- `/Volumes/Mac-Mini/workspaces/tian2-edu/STS/Regeneron_STS_Application_Questions_2026.txt` — Task 3
+```
+
+**改后**
+
+```
+- 「Regeneron STS 申请问题全文（2026 届）」 — Task 3
+```
+
+### `sts-rules-wizard` — `references/task3-decision-tree.md`
+
+**改前**
+
+```
+- `/Volumes/Mac-Mini/workspaces/tian2-edu/STS/Official-Rules.pdf` — Rules Wizard requirements and
+```
+
+**改后**
+
+```
+- 「Regeneron STS 官方规则（请自行从 societyforscience.org 取得）」 — Rules Wizard requirements and
+```
+
+### `sts-rules-wizard` — `references/disclosures-and-dq.md`
+
+**改前**
+
+```
+- `/Volumes/Mac-Mini/workspaces/tian2-edu/STS/Regeneron_STS_Application_Questions_2026.txt` — Task 4
+```
+
+**改后**
+
+```
+- 「Regeneron STS 申请问题全文（2026 届）」 — Task 4
+```
+
+### `sts-rules-wizard` — `references/disclosures-and-dq.md`
+
+**改前**
+
+```
+- `/Volumes/Mac-Mini/workspaces/tian2-edu/STS/Official-Rules.pdf` — disclosure obligations and
+```
+
+**改后**
+
+```
+- 「Regeneron STS 官方规则（请自行从 societyforscience.org 取得）」 — disclosure obligations and
+```
+
+### `sts-rules-wizard` — `references/disclosures-and-dq.md`
+
+**改前**
+
+```
+- `/Volumes/Mac-Mini/workspaces/tian2-edu/STS/rubric.json` — compliance/DQ items and integrity-screen
+```
+
+**改后**
+
+```
+- 「STS 四维评分标准（rubric.json）」 — compliance/DQ items and integrity-screen
+```
+
 ---
 
 ## 删除本机兜底路径（1 处）
@@ -115,6 +325,110 @@ Patterns mined from 「ISEF 获奖作品语料（ISEF-Scrape）」 (PHYS021 deep
 
 ```
 （已删除；保留 $ISEF_SCRAPE_ROOT 与 ~/ISEF-Scrape/output）
+```
+
+---
+
+## 剥离个人信息（7 处）
+
+
+
+### `yau-topic-finder` — `references/winners_index.csv`
+
+**改前**
+
+```
+表头含 3 个姓名字段（student/advisor/school）
+```
+
+**改后**
+
+```
+已删除这些列；脚本只用 year/subject/medal/paper_title
+```
+
+### `yau-topic-finder` — `references/winners/2022/README.md`
+
+**改前**
+
+```
+182 行「学校 / 学生 / 指导老师」条目
+```
+
+**改后**
+
+```
+已删除；论文标题、年份、奖级、学科保留
+```
+
+### `yau-topic-finder` — `references/winners/2025/README.md`
+
+**改前**
+
+```
+261 行「学校 / 学生 / 指导老师」条目
+```
+
+**改后**
+
+```
+已删除；论文标题、年份、奖级、学科保留
+```
+
+### `yau-topic-finder` — `references/winners/2024/README.md`
+
+**改前**
+
+```
+183 行「学校 / 学生 / 指导老师」条目
+```
+
+**改后**
+
+```
+已删除；论文标题、年份、奖级、学科保留
+```
+
+### `yau-topic-finder` — `references/winners/2023/README.md`
+
+**改前**
+
+```
+186 行「学校 / 学生 / 指导老师」条目
+```
+
+**改后**
+
+```
+已删除；论文标题、年份、奖级、学科保留
+```
+
+### `yau-topic-finder` — `references/winners/2021/README.md`
+
+**改前**
+
+```
+183 行「学校 / 学生 / 指导老师」条目
+```
+
+**改后**
+
+```
+已删除；论文标题、年份、奖级、学科保留
+```
+
+### `yau-topic-finder` — `references/winners/2020/README.md`
+
+**改前**
+
+```
+183 行「学校 / 学生 / 指导老师」条目
+```
+
+**改后**
+
+```
+已删除；论文标题、年份、奖级、学科保留
 ```
 
 ---

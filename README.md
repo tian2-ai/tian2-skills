@@ -6,7 +6,7 @@
 
 ```
 /plugin marketplace add tian2-ai/tian2-skills
-/plugin install isef@tian2-skills
+/plugin install isef@tian2-skills      # 或 yau / sts / conrad
 ```
 
 装好后 skill 以 `isef:topic-finder` 这样的命名空间出现，不会和其他来源的同名 skill 冲突。
@@ -15,9 +15,12 @@
 
 | 插件 | skill 数 | 内容 |
 |---|---|---|
-| `isef` | 12 | 选题、合规表格、研究计划、摘要、展板、答辩、评审模拟、导师寻找、附属赛导航、数据分析辅导 |
+| `isef` | 12 | ISEF 国际科学与工程大奖赛：选题（含五届获奖作品查重）、合规表格、研究计划、摘要、展板、答辩、评审模拟、导师寻找、附属赛导航、数据分析辅导 |
+| `yau` | 9 | 丘成桐中学科学奖：选题（基于 2020–2025 六届获奖论文档案）、学科定位、研究计划、论文写作、答辩教练、导师寻找、AI 合规、升学路径 |
+| `sts` | 11 | Regeneron STS：资格与任务地图、选题、贡献陈述、研究报告、文书、合规表格、评审标准、模拟评分、Top-400 策略、导师寻找、数据分析辅导 |
+| `conrad` | 12 | Conrad Challenge：赛道导航、选题、精益画布、市场与财务、创新简报、知识产权、证据构建、评审模拟、路演、视频与网站、诚信守门、教练运营 |
 
-后续会陆续加入 conrad、yau、sts、epq、himcm 等竞赛体系。
+后续会陆续加入 EPQ、HiMCM 等体系。
 
 ## 为什么按竞赛分插件，而不是一次装全部
 
@@ -31,9 +34,13 @@ skill 的描述会占用上下文预算（默认为上下文的 2%，最低 16,0
 
 **语料不随本插件分发**——它是抓取产物，体量大且非本 skill 的内容。**缺失时不会静默出错**：脚本返回 `status: "unavailable"`，skill 会跳过 M4 维度、在输出中标注 `missing_sources`、并下调置信度。
 
-**ISEF 官方规则与表格 PDF**
+**各赛事的官方规则 PDF**
 
-各 skill 的 `references/` 里已含逐条提取的规则要点，日常使用不需要原始 PDF。需要原件时请自行从 [societyforscience.org](https://www.societyforscience.org/isef/international-rules/) 取得——官方文件不在本仓库再分发之列。
+各 skill 的 `references/` 里已含逐条提取的规则要点，日常使用不需要原始 PDF。需要原件时请自行从主办方取得（ISEF 与 STS 见 [societyforscience.org](https://www.societyforscience.org/)）——官方文件不在本仓库再分发之列。
+
+**关于丘奖获奖档案里的个人信息**
+
+`yau` 插件打包了 2020–2025 六届获奖论文的档案，用于查重与模式学习。**档案中的学生、指导老师、学校三个字段已在分发时移除**——这些名字虽由主办方公开发布，但可再分发的实名汇编与一次性公告是不同性质的东西，而 `mine_winners.py` 只用到年份、学科、奖级与论文标题，剥离后功能不受任何影响。
 
 ## 与作者本机版本的关系
 

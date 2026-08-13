@@ -1,8 +1,11 @@
 {
   "name": "tian2-skills",
-  "owner": { "name": "Tian2", "url": "https://tian-2.com" },
+  "owner": {
+    "name": "Tian2",
+    "url": "https://tian-2.com"
+  },
   "metadata": {
-    "description": "学生科研竞赛的方法论 skill 集。每个插件对应一个竞赛体系。"
+    "description": "学生科研竞赛的方法论 skill 集。每个插件对应一个竞赛体系，按需安装。"
   },
   "plugins": [
     {
@@ -11,7 +14,31 @@
       "source": "./plugins/isef",
       "version": "0.1.0",
       "category": "education",
-      "description": "ISEF 全流程 12 个 skill：选题（含五届获奖作品查重）、合规表格决策、研究计划、摘要优化、展板设计、答辩准备、评审模拟、导师寻找、附属赛导航、数据分析辅导。"
+      "description": "12 个 skill。ISEF 全流程：选题（含五届获奖作品查重）、合规表格决策、研究计划、摘要优化、展板设计、答辩准备、评审模拟、导师寻找、附属赛导航、数据分析辅导。"
+    },
+    {
+      "name": "yau",
+      "displayName": "丘成桐中学科学奖",
+      "source": "./plugins/yau",
+      "version": "0.1.0",
+      "category": "education",
+      "description": "9 个 skill。丘奖六学科全流程：选题（基于 2020–2025 六届 393 篇获奖论文档案）、学科定位、研究计划、论文写作、答辩教练、导师寻找、AI 使用合规、升学路径。以「自己出题自己做」的原创性与可辩护性为评分主轴。"
+    },
+    {
+      "name": "sts",
+      "displayName": "Regeneron STS 科学天才奖",
+      "source": "./plugins/sts",
+      "version": "0.1.0",
+      "category": "education",
+      "description": "11 个 skill。STS 全流程：资格与任务地图、选题、贡献陈述（Task 4 六个 200 词框）、研究报告、文书、合规表格、评审标准解读、模拟评分、Top-400 策略、导师寻找、数据分析辅导。"
+    },
+    {
+      "name": "conrad",
+      "displayName": "Conrad Challenge 创新挑战赛",
+      "source": "./plugins/conrad",
+      "version": "0.1.0",
+      "category": "education",
+      "description": "12 个 skill。Conrad 全流程：赛道导航、选题、精益画布、市场与财务、创新简报、知识产权可辩护性、证据构建、评审模拟、路演材料、视频与网站、学术诚信守门、教练运营。"
     }
   ]
 }

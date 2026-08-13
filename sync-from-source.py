@@ -18,6 +18,8 @@ Two rules keep this honest:
 
 from __future__ import annotations
 
+import csv
+import io
 import json
 import os
 import re
@@ -29,7 +31,12 @@ SOURCE = os.path.expanduser("~/ai-config/skills/mine")
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 # Which upstream skills go into which plugin.
-PLUGINS = {"isef": "isef-*"}
+PLUGINS = {
+    "isef": "isef-*",
+    "yau": "yau-*",
+    "sts": "sts-*",
+    "conrad": "conrad-*",
+}
 
 # Files that exist upstream but must not ship: internal planning, scratch notes.
 EXCLUDE_FILES = {"development-plan.md"}
@@ -49,6 +56,17 @@ PATH_LABELS = {
         "isef-topic-finder 设计方案（2026-05-25 版）",
     "ISEF-Scrape/output/": "ISEF 获奖作品语料（ISEF-Scrape）",
     "ISEF-Scrape/output": "ISEF 获奖作品语料（ISEF-Scrape）",
+    # STS：同为溯源标注，被引内容已固化在各 skill 的 references/ 里
+    "STS/2024/STS_Top400_Winning_Criteria.md": "STS Top-400 获奖标准分析（2024 届，11 位 OTT 获奖者通读）",
+    "STS/2024/OTT_Selection_Analysis.md": "STS On-The-Table 选拔机制分析（2024 届）",
+    "STS/2024/On_The_Table_2025.xlsx": "STS On-The-Table 名次表（2025 届）",
+    "STS/Regeneron_STS_Application_Questions_2026.txt": "Regeneron STS 申请问题全文（2026 届）",
+    "STS/Regeneron_STS_Application_Questions.md": "Regeneron STS 申请问题全文",
+    "STS/application_reference.md": "STS 申请参考",
+    "STS/scoring_engine.py": "STS 评分引擎（本项目内部实现）",
+    "STS/rubric.json": "STS 四维评分标准（rubric.json）",
+    # 第三方版权材料：不再分发，改为指明官方来源
+    "STS/Official-Rules.pdf": "Regeneron STS 官方规则（请自行从 societyforscience.org 取得）",
 }
 
 # Literal lines to drop: machine-specific fallbacks in resolution chains. The
@@ -57,6 +75,48 @@ PATH_LABELS = {
 DROP_LINES = [
     '        "/Volumes/Mac-Mini/workspaces/tian2-edu/ISEF-Scrape/output",\n',
 ]
+
+
+# The Yau winners archive ships with the skill, and it carries student, advisor
+# and school names for 320 entries. Those names are individually public -- the
+# award announces them -- but a redistributable compiled index of them is a
+# different artifact from an announcement, and mine_winners.py never reads those
+# columns: it prints year, keyword-hit count and paper title only. So they are
+# stripped, which costs the skill nothing.
+PII_CSV_COLUMNS = {"student", "advisor", "school"}
+PII_MD_LINE = re.compile(r"^\s*-\s*(学校 / School|学生 / Students|指导老师 / Advisor):")
+
+
+def strip_csv_pii(text: str) -> tuple[str, int]:
+    """Drop the name-bearing columns.
+
+    Must go through the csv module, not str.split(","): at least one school
+    field is a quoted value containing commas ("The International School,
+    Bangalore, India"). Splitting naively shifts every later column on that row,
+    so the wrong three get dropped and the names survive -- which is exactly the
+    failure this function exists to prevent.
+    """
+    rows = list(csv.reader(io.StringIO(text)))
+    if not rows:
+        return text, 0
+    drop = {i for i, c in enumerate(rows[0]) if c.strip() in PII_CSV_COLUMNS}
+    if not drop:
+        return text, 0
+    buf = io.StringIO()
+    w = csv.writer(buf, lineterminator="\n")
+    for r in rows:
+        w.writerow([c for i, c in enumerate(r) if i not in drop])
+    return buf.getvalue(), len(drop)
+
+
+def strip_md_pii(text: str) -> tuple[str, int]:
+    kept, dropped = [], 0
+    for ln in text.splitlines():
+        if PII_MD_LINE.match(ln):
+            dropped += 1
+            continue
+        kept.append(ln)
+    return "\n".join(kept) + ("\n" if text.endswith("\n") else ""), dropped
 
 
 def transform(text: str) -> tuple[str, list[tuple[str, str, str]]]:
@@ -89,9 +149,19 @@ def copy_skill(src: str, dst: str) -> list[tuple[str, str, str, str]]:
             rel = os.path.relpath(s, src)
             d = os.path.join(dst, rel)
             os.makedirs(os.path.dirname(d), exist_ok=True)
-            if name.endswith((".md", ".py", ".sh", ".json", ".txt")):
+            if name.endswith((".md", ".py", ".sh", ".json", ".txt", ".csv")):
                 text = open(s, encoding="utf-8", errors="ignore").read()
                 new, notes = transform(text)
+                if name.endswith(".csv"):
+                    new, n = strip_csv_pii(new)
+                    if n:
+                        notes.append(("剥离个人信息", f"表头含 {n} 个姓名字段（student/advisor/school）",
+                                      "已删除这些列；脚本只用 year/subject/medal/paper_title"))
+                elif "winners" in root and name == "README.md":
+                    new, n = strip_md_pii(new)
+                    if n:
+                        notes.append(("剥离个人信息", f"{n} 行「学校 / 学生 / 指导老师」条目",
+                                      "已删除；论文标题、年份、奖级、学科保留"))
                 with open(d, "w", encoding="utf-8") as fh:
                     fh.write(new)
                 changes += [(rel, k, b, a) for k, b, a in notes]
@@ -112,7 +182,9 @@ def main() -> int:
         dst_root = os.path.join(HERE, "plugins", plugin, "skills")
         names = sorted(
             n for n in os.listdir(SOURCE)
-            if re.fullmatch(pattern.replace("*", ".*"), n) and os.path.isdir(os.path.join(SOURCE, n))
+            if not n.startswith("._")
+            and re.fullmatch(pattern.replace("*", ".*"), n)
+            and os.path.isdir(os.path.join(SOURCE, n))
         )
         if check:
             print(f"{plugin}: {len(names)} skills upstream")
@@ -121,7 +193,7 @@ def main() -> int:
                 if not os.path.isdir(d):
                     print(f"  NEW upstream, not yet published: {n}")
             for n in sorted(os.listdir(dst_root)) if os.path.isdir(dst_root) else []:
-                if n not in names:
+                if not n.startswith("._") and n not in names:
                     print(f"  published but gone upstream: {n}")
             continue
         if os.path.isdir(dst_root):

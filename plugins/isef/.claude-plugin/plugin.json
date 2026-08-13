@@ -1,7 +1,9 @@
 {
   "name": "isef",
   "version": "0.1.0",
-  "description": "ISEF（国际科学与工程大奖赛）全流程 skill 集：选题、合规表格、研究计划、摘要、展板、答辩、评审模拟与导师寻找。基于 ISEF 2022–2026 五届获奖作品与 2026–2027 官方规则手册。",
-  "author": { "name": "Tian2" },
-  "homepage": "https://tian-2.com/isef/"
+  "description": "ISEF 国际科学与工程大奖赛 —— ISEF 全流程：选题（含五届获奖作品查重）、合规表格决策、研究计划、摘要优化、展板设计、答辩准备、评审模拟、导师寻找、附属赛导航、数据分析辅导。",
+  "author": {
+    "name": "Tian2"
+  },
+  "homepage": "https://tian-2.com/"
 }
