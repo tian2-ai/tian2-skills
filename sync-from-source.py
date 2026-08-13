@@ -220,7 +220,7 @@ def main() -> int:
 
     write_changelog(all_changes, counts)
     print(f"rebuilt {sum(counts.values())} skills, {len(all_changes)} transformations")
-    print("changelog -> docs/ISEF-分发改动记录.md")
+    print("changelog -> docs/分发改动记录.md")
     return 0
 
 
@@ -265,7 +265,7 @@ def write_changelog(changes: list[dict], counts: dict) -> None:
         "python3 sync-from-source.py           # 重新派生并刷新本文件", "```", "",
         "**不要直接改 `plugins/` 下的文件**——下次同步会被覆盖。改动请回到上游，或在 `sync-from-source.py` 里加规则。", "",
     ]
-    with open(os.path.join(HERE, "docs", "ISEF-分发改动记录.md"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(HERE, "docs", "分发改动记录.md"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(L))
 
 
