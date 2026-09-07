@@ -40,7 +40,7 @@ PLUGINS = {
 
 # Files that exist upstream but must not ship: internal planning, scratch notes.
 EXCLUDE_FILES = {"development-plan.md"}
-EXCLUDE_DIRS = {"__pycache__", ".git", "validation"}
+EXCLUDE_DIRS = {"__pycache__", ".git", "validation", "evals"}
 
 MACHINE_PREFIX = "/Volumes/Mac-Mini/workspaces/tian2-edu/"
 

@@ -10,7 +10,7 @@ description: >
   Bilingual coaching EN/中文; never invents a judge or a question outcome. Use whenever a student
   says "prepare for my Yau defense", "丘奖答辩", "英文答辩准备", "mock defense", "what will the
   judges ask", "帮我准备总决赛答辩", "make my finals PPT".
-argument-hint: [--subject math|physics|chemistry|biology|cs|econ] [--mode ppt|drill|mock|english] [--lang en|zh|both]
+argument-hint: '[--subject math|physics|chemistry|biology|cs|econ] [--mode ppt|drill|mock|english] [--lang en|zh|both]'
 allowed-tools: Read, Grep, Glob, Skill
 skill_version: 2026.1
 ---

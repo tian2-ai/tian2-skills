@@ -10,7 +10,7 @@ description: >
   outline + a critique note. Bilingual EN/中文. Use whenever a student says "draft my Yau
   research plan", "丘奖论文大纲", "帮我列论文结构", "outline my Yau paper", "structure my
   physics/math/econ paper for the Yau award", after they've chosen a topic.
-argument-hint: [--subject math|physics|chemistry|biology|cs|econ] [--depth light|standard|comprehensive] [--lang en|zh|both]
+argument-hint: '[--subject math|physics|chemistry|biology|cs|econ] [--depth light|standard|comprehensive] [--lang en|zh|both]'
 allowed-tools: Read, Grep, Glob, Skill
 skill_version: 2026.1
 ---

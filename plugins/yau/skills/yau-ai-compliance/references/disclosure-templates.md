@@ -1,7 +1,10 @@
 # AI-use disclosure templates
 
 From 白皮书 ch.7 §披露与诚信. Place in the paper. Adapt to what the student ACTUALLY did — never
-misrepresent. Yau has no required wording; these mirror the ISEF-2024 standard adopted voluntarily.
+misrepresent. Disclosure is REQUIRED by the official 2026 rules
+(https://www.yau-awards.com/show-86-59.html, verified 2026-08-27): the Acknowledgements page
+must state each use's 工具名称 / 版本 / 使用环节 / 使用频率, and the matching chat logs must be
+retained for submission. These templates organize exactly those four elements.
 
 ## Acknowledgements (blanket, for non-core assistance)
 ```

@@ -11,7 +11,7 @@ description: >
   ethical guards; no email scraping from non-public sources. Bilingual EN/中文. Use whenever a
   student says "find a Yau mentor", "丘奖找导师", "需要找指导老师", "how do I get a university
   advisor for my Yau project", "帮我写联系导师的邮件".
-argument-hint: [--subject math|physics|chemistry|biology|cs|econ] [--topic <phrase>] [--lang en|zh|both]
+argument-hint: '[--subject math|physics|chemistry|biology|cs|econ] [--topic <phrase>] [--lang en|zh|both]'
 allowed-tools: Read, Grep, Glob, Bash, Skill
 skill_version: 2026.1
 ---

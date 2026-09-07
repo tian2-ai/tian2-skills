@@ -11,7 +11,7 @@ description: >
   produce strong English. Use whenever a student says "write my Yau paper", "丘奖论文写作",
   "帮我写论文", "polish my Yau paper's English", "how should I structure the abstract", after the
   outline exists.
-argument-hint: [--section abstract|intro|methods|results|discussion|all] [--subject math|physics|chemistry|biology|cs|econ] [--lang en|zh|both]
+argument-hint: '[--section abstract|intro|methods|results|discussion|all] [--subject math|physics|chemistry|biology|cs|econ] [--lang en|zh|both]'
 allowed-tools: Read, Grep, Glob, Skill
 skill_version: 2026.1
 ---
@@ -81,8 +81,9 @@ single biggest finals failure (ch.7).
 - **Never fabricate a citation, result, or data point.**
 - **English polish ≠ rewriting.** Restructuring paragraphs with an LLM creates the AI-prose tells
   judges catch. Preserve the student's structure.
-- No public AI ruleset exists — frame disclosure as best practice "inferred from judge behavior
-  + the whitepaper," not "the rules require."
+- **Follow the official AI rules published 2026-07-08.** The Acknowledgements disclosure must
+  state tool name, version, stage of use, and frequency; retain/submit chat logs for review. Route
+  exact wording and compliance checks through `/yau-ai-compliance`.
 
 ## File map
 ```

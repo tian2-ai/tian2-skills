@@ -1,0 +1,89 @@
+{
+  "source": "openalex",
+  "status": "ok",
+  "papers_per_year": {
+    "2025": 68,
+    "2024": 43,
+    "2026": 36,
+    "2023": 33,
+    "2022": 19,
+    "2021": 17,
+    "2020": 14
+  },
+  "papers_per_year_avg": 32,
+  "category_normalized_percentile": 50,
+  "trend_slope": 6.857,
+  "top_papers": [
+    {
+      "title": "A Survey of Wearable Devices and Challenges",
+      "year": 2017,
+      "id": "W2740884108",
+      "cited_by_count": 804,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Assessing the stability of human locomotion: a review of current measures",
+      "year": 2013,
+      "id": "W2114121779",
+      "cited_by_count": 683,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Emerging flexible and wearable physical sensing platforms for healthcare and biomedical applications",
+      "year": 2016,
+      "id": "W2527552787",
+      "cited_by_count": 536,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Fiber Bragg Gratings for Medical Applications and Future Challenges: A Review",
+      "year": 2020,
+      "id": "W3081265596",
+      "cited_by_count": 357,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Machine Learning for Healthcare Wearable Devices: The Big Picture",
+      "year": 2022,
+      "id": "W4224242327",
+      "cited_by_count": 317,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Haptic wearables as sensory replacement, sensory augmentation and trainer \u2013 a review",
+      "year": 2015,
+      "id": "W1782270568",
+      "cited_by_count": 245,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Performance Evaluation of Lower Limb Exoskeletons: A Systematic Review",
+      "year": 2020,
+      "id": "W3032317253",
+      "cited_by_count": 227,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Wearable Sensors and Smart Devices to Monitor Rehabilitation Parameters and Sports Performance: An Overview",
+      "year": 2023,
+      "id": "W4319602000",
+      "cited_by_count": 226,
+      "why_it_matters": ""
+    },
+    {
+      "title": "A systematic review of the gait characteristics associated with Cerebellar Ataxia",
+      "year": 2017,
+      "id": "W2775536936",
+      "cited_by_count": 224,
+      "why_it_matters": ""
+    },
+    {
+      "title": "Real-Time Human Ambulation, Activity, and Physiological Monitoring: Taxonomy of Issues, Techniques, Applications, Challenges and Limitations",
+      "year": 2013,
+      "id": "W2095820027",
+      "cited_by_count": 210,
+      "why_it_matters": ""
+    }
+  ],
+  "note": "percentile uses placeholder table; build data/category_distributions.json to refine"
+}

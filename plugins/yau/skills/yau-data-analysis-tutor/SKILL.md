@@ -12,7 +12,7 @@ description: >
   Bilingual EN/中文; never fabricates a result. Use whenever a student says "analyze my Yau data",
   "which statistical test", "丘奖数据分析", "我该用什么检验", "how many baselines do I need",
   "is my analysis rigorous enough for the panel".
-argument-hint: [--subject math|physics|chemistry|biology|cs|econ] [--data <path>] [--lang en|zh|both]
+argument-hint: '[--subject math|physics|chemistry|biology|cs|econ] [--data <path>] [--lang en|zh|both]'
 allowed-tools: Read, Bash, Skill, Grep, Glob
 skill_version: 2026.1
 ---

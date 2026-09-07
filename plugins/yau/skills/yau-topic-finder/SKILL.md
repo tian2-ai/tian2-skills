@@ -122,8 +122,8 @@ performance you cannot observe.
    angle, earns the originality credit. (archive is for pattern-learning, not imitation.)
 5. **AI-norm flag.** If the idea leans on LLMs/ML, surface the subject-specific AI etiquette
    from `references/judge-backgrounds.md` (math: deep suspicion; CS: table-stakes) and point
-   to `/yau-ai-compliance`. The Yau award has **no public AI ruleset** — say "implicit norms,
-   inferred from judge behavior + the whitepaper," never "the rules say."
+   to `/yau-ai-compliance`. The Yau award published official AI-use rules on 2026-07-08;
+   distinguish those binding requirements from subject-specific panel etiquette.
 6. **Citation honesty.** Never invent a winner, paper, advisor, or judge. If
    `mine_winners.py` returns nothing for the keywords, say so and widen the range.
 
@@ -134,8 +134,8 @@ performance you cannot observe.
 🤖 yau-topic-finder · skill_version: 2026.1 · sources: [winners-archive, whitepaper ch.1/2/4, ...]
 AI-use note: This skill assisted topic exploration and rubric scoring using the local
 Yau archive and whitepaper. The research question, the original idea, and the paper must be
-your own — Yau judges probe understanding deeply at the all-English defense. The Yau award
-publishes no AI rules; the norms above are inferred from judge behavior + the whitepaper.
+your own — Yau judges probe understanding deeply at the all-English defense. Follow the official
+2026-07-08 AI-use rules; the subject-specific norms above supplement those rules.
 
 Next step → once you've picked a topic, run /yau-research-plan-drafter to structure the paper.
 ```

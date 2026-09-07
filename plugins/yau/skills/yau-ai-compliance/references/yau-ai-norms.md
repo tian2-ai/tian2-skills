@@ -1,7 +1,27 @@
-# Per-subject AI etiquette (green / yellow / red)
+# The 2026 official AI rules + per-subject etiquette (green / yellow / red)
 
-Distilled from 白皮书 ch.7 §各学科 AI 使用差异. These are INFERRED norms (no public rule), based
-on judge behavior + the whitepaper. Same AI strategy across subjects is a silent failure cause.
+## 官方规则 (BINDING — the published rules)
+
+Source:《丘成桐中学科学奖 AI 使用规则》, published 2026-07-08,
+https://www.yau-awards.com/show-86-59.html — verified 2026-08-27.
+
+- **允许 (allowed list):** 语言润色 / 语法检查 / 代码调试 / 文献检索线索 / 结构梳理 /
+  图表草稿 / 数据分析辅助。
+- **禁止 (prohibited list):** 代写论文主体 / 生成虚假文献 / 伪造数据 / 未声明的 AI 使用。
+- **披露要求 (disclosure):** 在致谢页写明每项 AI 使用的**工具名称 / 版本 / 使用环节 /
+  使用频率**（四要素）。
+- **聊天记录 (chat logs):** 与 AI 的**聊天记录须提交备查**——从项目开始就完整留存导出，
+  并保证与致谢页披露一一对应；不得删改、挑选或事后伪造。
+- **违规后果 (consequences):** 违规**取消资格并通报**。
+
+Everything below is judge-level ETIQUETTE that supplements the rules: what remains credible at
+the defense even when it is technically allowed.
+
+## Per-subject etiquette
+
+Distilled from 白皮书 ch.7 §各学科 AI 使用差异 — how judges in each subject actually treat AI
+use, layered ON TOP of the official rules above. Same AI strategy across subjects is a silent
+failure cause.
 
 ## Universal (all subjects, ch.7 §评委真实态度)
 - Judges assume you used AI; they will not forgive your not UNDERSTANDING it.
@@ -13,7 +33,8 @@ on judge behavior + the whitepaper. Same AI strategy across subjects is a silent
 ## 数学 Mathematics — AI is an aid, not a collaborator
 - GREEN: SymPy/Mathematica to verify hand-derived formulas; Lean/Coq/Isabelle to machine-verify
   key steps; LLM for literature search.
-- RED: pasting an LLM-generated proof into the paper; asking an LLM to "think of" a problem.
+- RED: pasting an LLM-generated proof into the paper (this is also 代写论文主体 — prohibited by
+  the official rules); asking an LLM to "think of" a problem.
 - Why: math judges are pure mathematicians with structural distrust of AI proofs; they re-derive
   your lemma on the whiteboard. No disclosure rescues an AI proof — just don't.
 

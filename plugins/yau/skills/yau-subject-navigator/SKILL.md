@@ -10,7 +10,7 @@ description: >
   judge or winner. Use whenever a student asks "which Yau subject should I enter", "丘奖选哪个
   学科", "我适合数学奖还是计算机奖", "what's the difference between the physics and chemistry
   prize", "经济金融建模奖适合我吗", or is choosing a track before topic selection.
-argument-hint: [--lang en|zh|both] [--depth light|medium|heavy]
+argument-hint: '[--lang en|zh|both] [--depth light|medium|heavy]'
 allowed-tools: Read, Grep, Glob, Bash, Skill
 skill_version: 2026.1
 ---
@@ -62,8 +62,9 @@ Hand the chosen subject to `/yau-topic-finder discover --subject <s>`.
 - Never tell a student a subject is "easier to win" — award counts are equal per subject (金1/银1/
   铜3/优胜5) and the panel quality is uniformly high.
 - Never invent a judge name or winner. Use only those in the reference docs / archive.
-- The Yau award has no public AI ruleset; describe AI norms as "implicit, inferred from judge
-  behavior + the whitepaper."
+- The Yau award published official AI-use rules on 2026-07-08. Distinguish binding requirements
+  (allowed/prohibited uses, four-element disclosure, chat-log review) from subject-specific panel
+  etiquette, and route compliance details through `/yau-ai-compliance`.
 - A student's school does not determine eligibility for a subject — anyone can enter any subject.
 
 ## File map
@@ -82,8 +83,8 @@ references/
 ```
 🤖 yau-subject-navigator · skill_version: 2026.1
 AI-use note: This skill helped you compare subjects using the Yau whitepaper + local archive.
-The choice, and the research, are yours. Yau publishes no AI rules; subject AI norms above are
-inferred from judge behavior + the whitepaper.
+The choice, and the research, are yours. Follow the official 2026-07-08 AI-use rules; the
+subject-specific panel norms above supplement those rules and do not replace them.
 
 Next step → /yau-topic-finder discover --subject <your-choice>
 ```
