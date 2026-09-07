@@ -4,12 +4,22 @@
 
 ## 安装
 
+**Claude Code**（会话内）：
+
 ```
 /plugin marketplace add tian2-ai/tian2-skills
 /plugin install isef@tian2-skills      # 或 yau / sts / conrad
 ```
 
-装好后 skill 以 `isef:topic-finder` 这样的命名空间出现，不会和其他来源的同名 skill 冲突。
+**Codex CLI**（终端，读取的是同一份市场清单）：
+
+```
+codex plugin marketplace add tian2-ai/tian2-skills
+codex plugin add isef@tian2-skills     # 或 yau / sts / conrad
+```
+
+Claude Code 里装好后 skill 带命名空间（如 `isef:isef-topic-finder`），不会和其他来源的同名
+skill 冲突；Codex 里用 `/skills` 浏览、`$skill 名` 显式调用，或描述任务由其自动匹配。
 
 ## 现有插件
 
