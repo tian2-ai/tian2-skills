@@ -100,15 +100,21 @@ python3 scripts/check_report_pdf.py <report.pdf> [--plag <查重时用的那份.
 背景与现状/材料方法/结果/讨论/参考文献/每位作者贡献）；化学"他人帮助须注明姓名与内容"；
 计算机"建议提交视频/可执行程序/源代码证明真实性"。缺的写进"形式不合格但可修复"。
 
-### Step 5 — 出报告
+### Step 5 — 出报告（必须产出三件套）
 
-严格按 `references/review-report-template.md` 的结构写：一句话结论 → ★ 取消资格级 →
-可修复项 → 已通过 → 缺证据 → 倒排时间表 → 依据与待核实。倒排时间表要算出具体日期：
-盖章类材料至少留 7 天行政周期；查重必须在最终版定稿之后。
-
-写完 markdown 报告后，可用 `python3 scripts/render_report.py 报告.md [--out 目录]`
-渲染成 tian2 品牌三格式交付（HTML / PDF / DOCX）；这也是 yau skill 家族书面交付物的
-统一产出规范，样式与依赖见 `assets/report-style/README.md`。
+完整审查一名学生/一篇论文时，交付以 `references/deliverables-catalog.md` 为准的**三件套**，
+缺一即未完成：
+- **M1 论文审计报告**（内容层：结构八要素、学科硬要求、逻辑与证据问题定位到章节行、
+  可解释性风险点、做得好的部分）；
+- **M2 参赛缺项报告**（本技能标准审查报告，严格按 `references/review-report-template.md`
+  结构：一句话结论 → ★ 取消资格级 → 可修复 → 已通过 → 缺证据 → 倒排时间表 → 依据与待核实；
+  倒排算出具体日期：盖章类至少留 7 天，查重在终稿冻结之后）；
+- **M3 整改行动与验收清单**（M1+M2 的 must-fix 合并为六列可执行表 + D-day 倒排；
+  复审在原表更新状态列）。
+三件均用 `python3 scripts/render_report.py 报告.md [--out 目录]` 渲染 tian2 品牌三格式
+（HTML / PDF / DOCX）交付——这也是 yau skill 家族书面交付物的统一产出规范
+（样式与依赖见 `assets/report-style/README.md`）。按需产出（答辩问题册、复核工作簿、
+家长会提纲等 14 项菜单）与场景组合见 `references/deliverables-catalog.md`。
 
 ## 护栏
 
@@ -136,6 +142,7 @@ references/
   materials-inventory.md                  ← 每项材料：模板路径 / 谁签谁盖 / 格式 / 环节
   subject-criteria-2026.md                ← 六科评审标准中提交前可检查的硬要求
   review-report-template.md               ← 审查报告固定结构与写法要求
+  deliverables-catalog.md                 ← 家族输出契约：必须三件套（M1/M2/M3）+ 14 项按需菜单
 assets/templates/                         ← 报告模板包：LaTeX/Word 模板 + 编译示意 PDF +
                                             致谢页范例（md/docx）+ 获奖论文结构解读 + README
 evals/fixtures/                           ← 合成测试 PDF（合规版 / 缺项乱序版）

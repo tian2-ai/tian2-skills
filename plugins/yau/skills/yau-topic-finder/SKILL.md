@@ -177,3 +177,10 @@ examples/
   `yau-originality-doctrine.md`.
 - 丘成桐 "自己出题自己做" / "加上一点儿原创性的想法" quotes: ch.7 §为什么需要专门谈, citing
   his public interview (\cite{ytinterview}).
+
+## 家族输出契约
+
+本技能的书面交付物遵循家族统一契约：判定词 pass/revise/blocked、证据定位、tian2 三格式
+渲染，以及"必须三件套 / 按需菜单"的分类——见
+`../yau-submission-reviewer/references/deliverables-catalog.md`（本技能主责的按需交付件
+也在该菜单中列明）。
