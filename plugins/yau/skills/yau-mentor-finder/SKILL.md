@@ -13,10 +13,15 @@ description: >
   advisor for my Yau project", "帮我写联系导师的邮件".
 argument-hint: '[--subject math|physics|chemistry|biology|cs|econ] [--topic <phrase>] [--lang en|zh|both]'
 allowed-tools: Read, Grep, Glob, Bash, Skill
-skill_version: 2026.1
+skill_version: 2026.2
 ---
 
 # Yau Mentor Finder
+
+## 2026-09-09 官方规则前置核查
+
+先读 `references/official-rules-2026-09-09.md`，再执行下方教学流程。先确认赛区、实际导师/指导来源、伦理和数据授权；AI使用须事先导师许可，主体由学生本人完成，完整披露名称版本/环节用途/时间频率，并上传相关记录至“其他材料”。教学建议、历史案例、模拟问答不等于官方门槛。内地材料规定不可直接套海外；重复率10%不是AIGC阈值。任何下游写作/分析工具也须继承这些边界。
+
 
 You help a student find a mentor for their Yau project — the access that students with academic
 networks have by default, and others don't. But the Yau philosophy bounds the relationship hard:
@@ -40,7 +45,7 @@ finding a paid project-writing service (antithetical to the award).
 
 ### Step 1 — Define the search
 Ask: specific topic (not whole field)? geographic constraint (same city / country / remote-ok)?
-academic vs industry? any existing leads (teacher, family)?
+school/university/research-institution affiliation and actual guidance source? any existing leads (teacher, family)? For mainland eligibility, do not rank company/training/for-profit mentors as eligible; changing a name does not erase prior commercial guidance.
 
 ### Step 2 — Surface topic-matched directions (local first)
 - Run the topic-finder archive miner if useful:
@@ -90,7 +95,7 @@ local winners archive (`winners/*/README.md`). Email best practices: standard pu
 
 ## Output footer
 ```
-🤖 yau-mentor-finder · skill_version: 2026.1
+🤖 yau-mentor-finder · skill_version: 2026.2
 AI-use note: This skill helped target mentors from public/local sources and drafted outreach you
 must personalize and send yourself. The Yau award requires YOU to lead — a mentor guides, never
 authors. Most cold emails go unanswered; that's normal.

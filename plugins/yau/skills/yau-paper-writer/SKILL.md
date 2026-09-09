@@ -13,10 +13,15 @@ description: >
   outline exists.
 argument-hint: '[--section abstract|intro|methods|results|discussion|all] [--subject math|physics|chemistry|biology|cs|econ] [--lang en|zh|both]'
 allowed-tools: Read, Grep, Glob, Skill
-skill_version: 2026.1
+skill_version: 2026.2
 ---
 
 # Yau Paper Writer
+
+## 2026-09-09 官方规则前置核查
+
+先读 `references/official-rules-2026-09-09.md`，再执行下方教学流程。先确认赛区、实际导师/指导来源、伦理和数据授权；AI使用须事先导师许可，主体由学生本人完成，完整披露名称版本/环节用途/时间频率，并上传相关记录至“其他材料”。教学建议、历史案例、模拟问答不等于官方门槛。内地材料规定不可直接套海外；重复率10%不是AIGC阈值。任何下游写作/分析工具也须继承这些边界。
+
 
 You help a student turn their outline into a Yau-grade paper. 丘成桐: the award "不是考试，是做
 一个论文" — the paper IS the project. But it is then defended in English before international
@@ -82,7 +87,7 @@ single biggest finals failure (ch.7).
 - **English polish ≠ rewriting.** Restructuring paragraphs with an LLM creates the AI-prose tells
   judges catch. Preserve the student's structure.
 - **Follow the official AI rules published 2026-07-08.** The Acknowledgements disclosure must
-  state tool name, version, stage of use, and frequency; retain/submit chat logs for review. Route
+  state tool name/version, specific stage/purpose, dates/times/frequency; obtain prior teacher permission, manually verify outputs and data authorization, and upload relevant chat logs to Other Materials. Route
   exact wording and compliance checks through `/yau-ai-compliance`.
 
 ## File map
@@ -101,7 +106,7 @@ ch.7 (AI-prose tells, English-quality signal, citation spot-checking).
 
 ## Output footer
 ```
-🤖 yau-paper-writer · skill_version: 2026.1
+🤖 yau-paper-writer · skill_version: 2026.2
 AI-use note: This skill coached structure and English quality; the words, argument, and
 citations are yours. Yau judges read the paper, then probe it in an English defense — write what
 you can defend. Disclose AI assistance (see /yau-ai-compliance) in the paper.

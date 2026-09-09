@@ -13,7 +13,7 @@ same window; paper stays updatable until Sep 15). Work backward:
   you go (`/yau-research-plan-drafter` → `/yau-paper-writer`); analyze (`/yau-data-analysis-tutor`);
   handle AI disclosure + chat-log retention (`/yau-ai-compliance`). Register early in the
   Jul 1 – Sep 15 window rather than waiting.
-- **By Sep 15:** submit the paper (deadline for both registration and submission).
+- **By Sep 15 (mainland):** submit ALL applicable materials: report PDF, 1–2-page Word acknowledgement (500–1500字; verify upload field), signed/stamped integrity declaration and mentor forms, final-version matching plagiarism report, AI disclosure + chat logs uploaded to Other Materials, ethics/consent and institution permission where applicable. September 16–30 is review, not a presumed grace period.
 - **Sep 16 – 30:** 官方材料审核 — make sure the submission package survives it (报名信息、
   PDF 封页/目录/致谢页、诚信声明、查重报告 ≤10%、AI 使用说明与聊天记录).
 - **Oct 1 – Nov 2:** 分赛区评审; if you advance, prep the defense (`/yau-defense-coach`).
@@ -23,7 +23,7 @@ same window; paper stays updatable until Sep 15). Work backward:
 Overseas tracks: Asia is earlier — registration due **Jun 11**, full report due **Aug 17**
 (https://yauaward-asia.hk — verified 2026-08-27); North America runs synchronized with the
 mainland Jul 1 – Sep 15 window (http://www.yau-science-awards.org/signup — verified
-2026-08-27). Same skills, shifted calendar.
+2026-08-27). These are historical 2026-08-27 observations, not reverified overseas rules on 2026-09-09. Verify regional eligibility, materials and deadline separately, not merely shift the mainland calendar.
 
 ## Reality check (ch.1 / ch.6 framing)
 - Balance against coursework, standardized tests, and other competitions — don't let the Yau run

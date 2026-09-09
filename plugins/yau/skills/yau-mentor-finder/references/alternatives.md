@@ -11,8 +11,7 @@ Cold faculty email is low-yield. Realistic fallbacks, in rough order of accessib
    universities recur as advisors' affiliations).
 4. **Graduate students / postdocs.** Often more responsive than senior faculty, and closer to
    hands-on technique. Find them via the lab's public page.
-5. **Online research mentorship programs.** Some are paid (can be costly) — mentionable but
-   outside this skill's scope; verify they respect the Yau "student leads" ethic.
+5. **Check actual institutional eligibility before any program.** For mainland entries, company/training/for-profit guidance is prohibited; student ownership or a university-affiliated individual does not exempt the commercial arrangement. Do not recommend paid online commercial mentorship as a compliant route. Assess legitimate school/university/research-institution programs, affiliation, permissions and signature/stamp responsibilities truthfully; unclear cases go to the organizers.
 6. **Peer + self-study.** For math especially, a strong self-directed student plus literature can
    go far — the award explicitly values 自己出题自己做.
 

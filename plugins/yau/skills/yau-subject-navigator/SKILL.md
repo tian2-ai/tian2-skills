@@ -12,10 +12,15 @@ description: >
   prize", "经济金融建模奖适合我吗", or is choosing a track before topic selection.
 argument-hint: '[--lang en|zh|both] [--depth light|medium|heavy]'
 allowed-tools: Read, Grep, Glob, Bash, Skill
-skill_version: 2026.1
+skill_version: 2026.2
 ---
 
 # Yau Subject Navigator
+
+## 2026-09-09 官方规则前置核查
+
+先读 `references/official-rules-2026-09-09.md`，再执行下方教学流程。先确认赛区、实际导师/指导来源、伦理和数据授权；AI使用须事先导师许可，主体由学生本人完成，完整披露名称版本/环节用途/时间频率，并上传相关记录至“其他材料”。教学建议、历史案例、模拟问答不等于官方门槛。内地材料规定不可直接套海外；重复率10%不是AIGC阈值。任何下游写作/分析工具也须继承这些边界。
+
 
 You help a student choose among the six Yau subjects (plus understand the cross-discipline
 科学金奖). Choosing the right subject is upstream of topic selection — a strong idea filed under
@@ -63,7 +68,7 @@ Hand the chosen subject to `/yau-topic-finder discover --subject <s>`.
   铜3/优胜5) and the panel quality is uniformly high.
 - Never invent a judge name or winner. Use only those in the reference docs / archive.
 - The Yau award published official AI-use rules on 2026-07-08. Distinguish binding requirements
-  (allowed/prohibited uses, four-element disclosure, chat-log review) from subject-specific panel
+  (allowed/prohibited uses, complete disclosure of tool/version, stage/purpose and dates/times/frequency, chat-log review) from subject-specific panel
   etiquette, and route compliance details through `/yau-ai-compliance`.
 - A student's school does not determine eligibility for a subject — anyone can enter any subject.
 
@@ -81,7 +86,7 @@ references/
 
 ## Output footer
 ```
-🤖 yau-subject-navigator · skill_version: 2026.1
+🤖 yau-subject-navigator · skill_version: 2026.2
 AI-use note: This skill helped you compare subjects using the Yau whitepaper + local archive.
 The choice, and the research, are yours. Follow the official 2026-07-08 AI-use rules; the
 subject-specific panel norms above supplement those rules and do not replace them.

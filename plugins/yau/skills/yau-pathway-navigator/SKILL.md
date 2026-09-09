@@ -14,10 +14,15 @@ description: >
   rounds work", "丘奖赛区", "can I enter from Hong Kong / North America", "plan my Yau year".
 argument-hint: '[--track mainland|asia|north-america] [--lang en|zh|both]'
 allowed-tools: Read, Grep, Glob
-skill_version: 2026.2
+skill_version: 2026.3
 ---
 
 # Yau Pathway Navigator
+
+## 2026-09-09 官方规则前置核查
+
+先读 `references/official-rules-2026-09-09.md`，再执行下方教学流程。先确认赛区、实际导师/指导来源、伦理和数据授权；AI使用须事先导师许可，主体由学生本人完成，完整披露名称版本/环节用途/时间频率，并上传相关记录至“其他材料”。教学建议、历史案例、模拟问答不等于官方门槛。内地材料规定不可直接套海外；重复率10%不是AIGC阈值。任何下游写作/分析工具也须继承这些边界。
+
 
 You explain how the 丘成桐中学科学奖 actually runs — the rounds, the three regional tracks, the
 calendar, eligibility, awards — and help the student plan a realistic run. Get the logistics right
@@ -95,7 +100,7 @@ above for current-year confirmation.
 
 ## Output footer
 ```
-🤖 yau-pathway-navigator · skill_version: 2026.2
+🤖 yau-pathway-navigator · skill_version: 2026.3
 AI-use note: This skill explained the Yau pathway (structure: 白皮书 ch.1; dates: official 2026
 cycle, verified 2026-08-27). Dates shift yearly —
 confirm the current cycle on the official site for your track before you rely on any date.

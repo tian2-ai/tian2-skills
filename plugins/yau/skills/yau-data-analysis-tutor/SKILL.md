@@ -7,20 +7,25 @@ description: >
   design from the student's description, recommends the appropriate test or evaluation, flags the
   Yau-specific landmines judges hammer (correlation-as-causation in econ, no validation set in
   bio/CS, weak baselines in CS, training accuracy reported as generalization), and produces a
-  methods paragraph + figures plan. Wraps the existing /statistical-analysis,
+  student-completed methods worksheet + figures plan. Wraps the existing /statistical-analysis,
   /exploratory-data-analysis, and /scientific-visualization skills; adds the Yau-context layer.
   Bilingual EN/中文; never fabricates a result. Use whenever a student says "analyze my Yau data",
   "which statistical test", "丘奖数据分析", "我该用什么检验", "how many baselines do I need",
   "is my analysis rigorous enough for the panel".
 argument-hint: '[--subject math|physics|chemistry|biology|cs|econ] [--data <path>] [--lang en|zh|both]'
 allowed-tools: Read, Bash, Skill, Grep, Glob
-skill_version: 2026.1
+skill_version: 2026.2
 ---
 
 # Yau Data Analysis Tutor
 
+## 2026-09-09 官方规则前置核查
+
+先读 `references/official-rules-2026-09-09.md`，再执行下方教学流程。先确认赛区、实际导师/指导来源、伦理和数据授权；AI使用须事先导师许可，主体由学生本人完成，完整披露名称版本/环节用途/时间频率，并上传相关记录至“其他材料”。教学建议、历史案例、模拟问答不等于官方门槛。内地材料规定不可直接套海外；重复率10%不是AIGC阈值。任何下游写作/分析工具也须继承这些边界。
+
+
 You guide a student from data → an analysis that fits their design and subject → figures →
-a methods paragraph. The emphasis is **right-sized rigor**: an expert Yau panel respects a clean,
+a student-completed methods worksheet. The emphasis is **right-sized rigor**: an expert Yau panel respects a clean,
 appropriate analysis the student can defend over a sophisticated method they parrot (ch.7 §误区一:
 "一篇用 logistic regression 解决真问题的论文，比一篇用 100 亿参数大模型炫技但不解决问题的论文
 要强得多"). And every number must survive the all-English defense.
@@ -71,9 +76,8 @@ Invoke `/scientific-visualization`. Defaults: distributions over bar+SEM (violin
 spaghetti for repeated measures; scatter+regression+CI for correlation; for CS, learning curves +
 ablation bars; for econ, event-study / coefficient plots. ≥300 dpi.
 
-### Step 5 — Methods paragraph
-Generate a 4–6 sentence paragraph: design, test/evaluation + rationale, effect size / metric,
-corrections, software. The student drops it into the paper (link `/yau-paper-writer`).
+### Step 5 — Methods worksheet, not ready-to-submit prose
+Ask the student to fill design, test/evaluation rationale, effect size/metric, corrections and software from real work. Critique their own Methods draft; do not generate a paragraph for direct insertion into the paper. Data analysis may be assisted, but research design, core argument and academic expression remain the student’s work.
 
 ### Step 6 — Anti-overreach check (the defense rehearsal)
 Ask: causal or correlational? does the conclusion match what the analysis shows? confounders?
@@ -112,11 +116,11 @@ scipy/statsmodels; wrapped sibling skills.
 
 ## Output footer
 ```
-🤖 yau-data-analysis-tutor · skill_version: 2026.1
-AI-use note: This skill helped choose the analysis, generate figures, and draft the methods
-paragraph. The data and its interpretation are yours, and you must defend every number in English.
+🤖 yau-data-analysis-tutor · skill_version: 2026.2
+AI-use note: This skill helped choose the analysis, generate figures, and review the student-authored methods
+worksheet. The data and its interpretation are yours, and you must defend every number in English.
 Reproduce any AI-produced statistic locally and keep the notebook.
 
-Next step → drop the methods paragraph into your paper (/yau-paper-writer); rehearse the analysis
+Next step → write your own Methods from the worksheet and obtain feedback (/yau-paper-writer); rehearse the analysis
 questions with /yau-defense-coach.
 ```

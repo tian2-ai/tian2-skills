@@ -1,5 +1,8 @@
 # Section intake prompts (per subject)
 
+> 2026-09-09规则优先：先核 `official-rules-2026-09-09.md` 的适用赛区、许可/数据安全、主体本人完成、伦理/机构签章、完整披露和提交要求。下方为学科教学/历史经验，并非新增官方硬门槛；数字评分、训练时长、基线数量、排期建议不代表官方规则。历史获奖医疗/药物题目不是本季许可，纯理论生物研究并不因没有湿实验自动不合格。
+
+
 Ask one section at a time; capture the student's OWN words. If they can't answer, that section
 isn't ready — pause and design it, don't fabricate.
 

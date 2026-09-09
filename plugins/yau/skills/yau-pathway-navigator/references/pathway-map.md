@@ -9,7 +9,7 @@ converge at the 总决赛 at Tsinghua (all-English defense, early December: **De
 - **中国内地** — mainland HS students (高中 only). Register: www.yau-awards.com
 - **海外·亚洲** — HK/Macau/Taiwan + other Asian countries. Register: https://yauaward-asia.hk
 - **海外·北美** — other overseas countries. Register: http://www.yau-science-awards.org/signup
-Teams: 1–3 HS students from the same school, with 1–2 指导老师. Training/for-profit
+Mainland eligibility only (overseas: verify the regional rules separately): 1–3 HS students from the same school, with 1–2 指导老师. Training/for-profit
 institutions are **prohibited** from coaching entries.
 (Source: https://www.yau-awards.com/page-rule.html — verified 2026-08-27)
 
@@ -49,11 +49,11 @@ institutions are **prohibited** from coaching entries.
 
 **数学 (3 regions):**
 - 北部: 北京/河北/天津/山西/内蒙古/新疆/黑龙江/吉林/辽宁/湖北/河南/陕西/宁夏/甘肃/青海
-- 南部: 广东/广西/海南/四川/湖南/贵州/云南/西藏/重庆/福建/江西/安徽/澳门
+- 南部: 广东/广西/海南/四川/湖南/贵州/云南/西藏/重庆/福建/江西/安徽
 - 东部: 浙江/江苏/山东/上海
 **物理/化学/生物/计算机/经济金融建模 (2 regions):**
-- 北部: 北京/河北/天津/山西/山东/内蒙古/新疆/黑龙江/吉林/辽宁/河南/陕西/宁夏/甘肃/青海
-- 南部: 浙江/江苏/上海/广东/广西/海南/四川/湖南/湖北/贵州/云南/西藏/重庆/福建/江西/安徽
+- 北部: 北京/河北/天津/山西/山东/安徽/江苏/内蒙古/新疆/黑龙江/吉林/辽宁/河南/陕西/宁夏/甘肃/青海
+- 南部: 浙江/上海/广东/广西/海南/四川/湖南/湖北/贵州/云南/西藏/重庆/福建/江西
 Overseas tracks are organized by region office, not these provincial splits.
 
 ## Awards (2026 official)

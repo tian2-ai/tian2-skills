@@ -3,7 +3,7 @@
 From 白皮书 ch.1 (评审流程) + ch.4 (评委背景) + ch.7 (Q&A patterns).
 
 ## The format (ch.1)
-- 全国总决赛 at Tsinghua, mid-December. **All-English oral defense**, run by the international
+- 2026 全球总决赛 at Tsinghua, December 5–6 (subject to final notice; page-rule.html verified 2026-09-09). Students AND guiding teachers must attend the interview/defense. **All-English oral defense**, run by the international
   review committee. (Asia/North-America tracks defend earlier in their own rounds.)
 - The semifinal (半决赛) also adds a defense round before the finals.
 - Judges question the paper in depth; they assume AI use and probe understanding.

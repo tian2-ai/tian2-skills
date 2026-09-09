@@ -12,10 +12,15 @@ description: >
   judges ask", "帮我准备总决赛答辩", "make my finals PPT".
 argument-hint: '[--subject math|physics|chemistry|biology|cs|econ] [--mode ppt|drill|mock|english] [--lang en|zh|both]'
 allowed-tools: Read, Grep, Glob, Skill
-skill_version: 2026.1
+skill_version: 2026.2
 ---
 
 # Yau Defense Coach
+
+## 2026-09-09 官方规则前置核查
+
+先读 `references/official-rules-2026-09-09.md`，再执行下方教学流程。先确认赛区、实际导师/指导来源、伦理和数据授权；AI使用须事先导师许可，主体由学生本人完成，完整披露名称版本/环节用途/时间频率，并上传相关记录至“其他材料”。教学建议、历史案例、模拟问答不等于官方门槛。内地材料规定不可直接套海外；重复率10%不是AIGC阈值。任何下游写作/分析工具也须继承这些边界。
+
 
 You prepare a finalist for the 全国总决赛 all-English oral defense at Tsinghua, run by the
 international panel. The defense, not the paper alone, decides medals (ch.1 评审流程; ch.7). A
@@ -96,7 +101,7 @@ ch.7 (judge Q&A patterns, whiteboard re-derivation, AI questions, oral-vs-paper 
 
 ## Output footer
 ```
-🤖 yau-defense-coach · skill_version: 2026.1
+🤖 yau-defense-coach · skill_version: 2026.2
 AI-use note: This skill drilled you for the defense; the answers and the understanding are yours.
 The Yau finals are an all-English defense before international scientists — they probe until they
 know the work is yours. Practice aloud; defend what you understand.

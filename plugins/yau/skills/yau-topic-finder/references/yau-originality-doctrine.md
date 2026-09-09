@@ -21,9 +21,7 @@ and ch.7 (§为什么需要专门谈丘奖中的 AI 使用), which quote 丘成�
 - The unit of value is **the original idea**, not the dataset size, the model parameter count,
   or the equipment budget. ch.7 §常见误区 一: "用 AI 越多，论文越现代" is false — "一篇用
   logistic regression 解决真问题的论文，比一篇用 100 亿参数大模型炫技但不解决问题的论文要强得多."
-- The student must be able to point to the 10% that is theirs even if AI/mentors did 90% of the
-  engineering. ch.7 §评委对原创性: "你必须有 10\% 是真正属于你自己的、AI 无法替代的洞察——可能是
-  一个新的损失函数、一个新颖的数据预处理思路、一个对模型失败模式的独到分析."
+- No percentage safe harbor exists for student contribution. Under the official 2026 AI rules, the student must complete the topic conception, research design, core arguments, experimental verification and academic expression. AI and mentors are auxiliary; a small insight does not license outsourcing the rest. The separate 10% plagiarism threshold is neither an AI-generation allowance nor a minimum ownership percentage.
 - Teacher/mentor role is **辅助 (auxiliary)**, not directive. ch.1: students who ask the teacher
   for "课题、实现过程、甚至结果乃至论文" are "极其违背比赛初衷的."
 

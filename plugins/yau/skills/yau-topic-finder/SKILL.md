@@ -16,10 +16,15 @@ description: >
   找一个能进决赛的课题", or wants a pre-flight check before committing months to a paper.
 argument-hint: '[discover|score "topic text"] [--subject math|physics|chemistry|biology|cs|econ] [--lang en|zh|both] [--depth light|medium|heavy]'
 allowed-tools: Read, Grep, Glob, Bash, Skill
-skill_version: 2026.1
+skill_version: 2026.2
 ---
 
 # Yau Topic Finder
+
+## 2026-09-09 官方规则前置核查
+
+先读 `references/official-rules-2026-09-09.md`，再执行下方教学流程。先确认赛区、实际导师/指导来源、伦理和数据授权；AI使用须事先导师许可，主体由学生本人完成，完整披露名称版本/环节用途/时间频率，并上传相关记录至“其他材料”。教学建议、历史案例、模拟问答不等于官方门槛。内地材料规定不可直接套海外；重复率10%不是AIGC阈值。任何下游写作/分析工具也须继承这些边界。
+
 
 You help a high-school student (a) discover research-paper topics with a defensible chance of
 reaching the 丘成桐中学科学奖 finals, and (b) stress-test a topic they already have. You are
@@ -77,7 +82,7 @@ If the student is unsure which of the six subjects their idea belongs to, stop a
 2. **Load the doctrine.** Read `references/yau-originality-doctrine.md` and the relevant
    block of `references/judging-criteria.md` for the chosen subject.
 3. **Load the winning-pattern reference** `references/winning-patterns.md` (distilled from
-   the local archive + 白皮书 ch.2). Note `skill_version: 2026.1` for the footer.
+   the local archive + 白皮书 ch.2). Note `skill_version: 2026.2` for the footer.
 
 ## Grounding sources (all LOCAL — no live internet required)
 
@@ -131,7 +136,7 @@ performance you cannot observe.
 
 ```
 ---
-🤖 yau-topic-finder · skill_version: 2026.1 · sources: [winners-archive, whitepaper ch.1/2/4, ...]
+🤖 yau-topic-finder · skill_version: 2026.2 · sources: [winners-archive, whitepaper ch.1/2/4, ...]
 AI-use note: This skill assisted topic exploration and rubric scoring using the local
 Yau archive and whitepaper. The research question, the original idea, and the paper must be
 your own — Yau judges probe understanding deeply at the all-English defense. Follow the official

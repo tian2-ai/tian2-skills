@@ -1,0 +1,141 @@
+% ==========================================================================
+% Tian2 Report — pandoc + XeLaTeX template (yau skill family deliverables)
+% Brand: cream #F5EDDC page, ink #2C2416 type & linework, coral #E8614C
+% reserved for blocked/★. Serif display headings, sans body, xeCJK Chinese.
+% Requires: xelatex, fontspec, xeCJK, longtable, booktabs, fancyhdr, etoolbox
+% ==========================================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{geometry}
+\geometry{top=30mm,bottom=30mm,left=24mm,right=24mm,headheight=16pt}
+
+\usepackage{xcolor}
+\definecolor{cream}{HTML}{F5EDDC}
+\definecolor{creamtwo}{HTML}{EFE4CD}
+\definecolor{ink}{HTML}{2C2416}
+\definecolor{inktwo}{HTML}{4A3E2A}
+\definecolor{inkthree}{HTML}{7A6B53}
+\definecolor{coral}{HTML}{E8614C}   % blocked / ★ only
+\definecolor{mint}{HTML}{8FB89A}
+\definecolor{mustard}{HTML}{D9A441}
+
+\pagecolor{cream}
+\color{ink}
+
+% ---------- Fonts: brand first, system fallback, loud \typeout when falling back
+\usepackage{fontspec}
+\usepackage{xeCJK}
+
+% Latin body (brand: Inter) — probe the full face name ("Inter Regular"):
+% a single-token name would trigger XeTeX's legacy TFM lookup and mktextfm noise
+\IfFontExistsTF{Inter Regular}{\setmainfont{Inter}}{%
+  \IfFontExistsTF{Helvetica Neue}{\setmainfont{Helvetica Neue}%
+    \typeout{TIAN2-FONT-FALLBACK: Inter not installed, using Helvetica Neue}}{%
+    \setmainfont{Arial}%
+    \typeout{TIAN2-FONT-FALLBACK: Inter not installed, using Arial}}}
+% Latin display (brand: Playfair Display) — used by headings
+\IfFontExistsTF{Playfair Display}{\newfontfamily\displayfont{Playfair Display}}{%
+  \newfontfamily\displayfont{Georgia}%
+  \typeout{TIAN2-FONT-FALLBACK: Playfair Display not installed, using Georgia}}
+% CJK body (brand: Noto Sans SC)
+\IfFontExistsTF{Noto Sans SC}{\setCJKmainfont{Noto Sans SC}}{%
+  \IfFontExistsTF{PingFang SC}{\setCJKmainfont{PingFang SC}%
+    \typeout{TIAN2-FONT-FALLBACK: Noto Sans SC not installed, using PingFang SC}}{%
+    \setCJKmainfont{STHeiti}%
+    \typeout{TIAN2-FONT-FALLBACK: Noto Sans SC not installed, using STHeiti}}}
+% CJK display (brand: Noto Serif SC) — used by headings
+\IfFontExistsTF{Noto Serif SC}{\setCJKfamilyfont{zhdisplay}{Noto Serif SC}}{%
+  \IfFontExistsTF{Songti SC}{\setCJKfamilyfont{zhdisplay}{Songti SC}%
+    \typeout{TIAN2-FONT-FALLBACK: Noto Serif SC not installed, using Songti SC}}{%
+    \setCJKfamilyfont{zhdisplay}{STSong}%
+    \typeout{TIAN2-FONT-FALLBACK: Noto Serif SC not installed, using STSong}}}
+\IfFontExistsTF{PingFang SC}{\setCJKsansfont{PingFang SC}\setCJKmonofont{PingFang SC}}{%
+  \setCJKsansfont{STHeiti}\setCJKmonofont{STHeiti}}
+
+% Route arrows, enclosed numerals, stars, reference marks through the CJK font
+% (Latin text fonts often lack → ① ★ ※ ⁂ glyphs)
+\xeCJKDeclareCharClass{CJK}{"2190 -> "21FF}  % arrows
+\xeCJKDeclareCharClass{CJK}{"2460 -> "24FF}  % enclosed numerals
+\xeCJKDeclareCharClass{CJK}{"25A0 -> "26FF}  % geometric shapes, ★ ☆
+\xeCJKDeclareCharClass{CJK}{"203B, "2042}    % ※ ⁂
+
+\linespread{1.32}
+\setlength{\parskip}{0.45em}
+\setlength{\parindent}{0pt}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+% ---------- Headings: serif display, ink rules (2.5px ≈ 1.8pt, hairline ≈ 0.7pt)
+\usepackage{titlesec}
+\titleformat{\section}
+  {\displayfont\CJKfamily{zhdisplay}\bfseries\LARGE\color{ink}}{}{0pt}{}
+  [\vspace{3pt}{\color{ink}\hrule height 1.8pt}]
+\titlespacing*{\section}{0pt}{1.6em}{0.9em}
+\titleformat{\subsection}
+  {\displayfont\CJKfamily{zhdisplay}\bfseries\large\color{ink}}{}{0pt}
+  {{\color{ink}\hrule height 0.7pt}\vspace{7pt}}
+\titlespacing*{\subsection}{0pt}{1.7em}{0.7em}
+\titleformat{\subsubsection}
+  {\displayfont\CJKfamily{zhdisplay}\bfseries\normalsize\color{ink}}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{1.2em}{0.5em}
+
+% ---------- Header / footer: thin ink rule up top, folio below
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\color{inktwo}\sffamily\scriptsize\bfseries $if(header-label)$$header-label$$else$TIAN2 EDUCATION$endif$}
+\fancyhead[R]{\color{inkthree}\sffamily\scriptsize $if(date)$$date$$endif$}
+\renewcommand{\headrule}{{\color{ink}\hrule height 0.7pt width\headwidth}}
+\fancyfoot[C]{\color{inktwo}\sffamily\scriptsize — \thepage\ —}
+\renewcommand{\footrulewidth}{0pt}
+
+% ---------- Tables: pandoc longtable output, shrunk so 7-col verdict tables fit
+\usepackage{longtable,booktabs,array,calc,multirow}
+\newcounter{none} % pandoc emits \def\LTcaptype{none} for uncaptioned tables
+\usepackage{etoolbox}
+% Correct order of tables after \paragraph or \subparagraph (pandoc default fix)
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+\AtBeginEnvironment{longtable}{\footnotesize\linespread{1.18}\selectfont%
+  \setlength{\tabcolsep}{4pt}\arrayrulecolor{ink}}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\setlength{\LTpre}{0.8em}
+\setlength{\LTpost}{0.8em}
+% booktabs rules in ink
+\usepackage{colortbl}
+\arrayrulecolor{ink}
+\aboverulesep=0.35ex
+\belowrulesep=0.55ex
+
+% ---------- Blockquote: hairline-left caveat block
+\usepackage{framed}
+\renewenvironment{quote}
+  {\def\FrameCommand{{\color{ink}\vrule width 1.8pt}\hspace{10pt}}%
+   \MakeFramed{\advance\hsize-\width\FrameRestore}\small\color{inktwo}}
+  {\endMakeFramed}
+
+% ---------- Code: colophon footer block
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{verbatim}{Verbatim}{breaklines=true,breakanywhere=true,fontsize=\footnotesize,formatcom=\color{inktwo}}
+
+% ---------- pandoc boilerplate
+\providecommand{\tightlist}{\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\makeatother
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=inktwo,citecolor=ink,breaklinks=true}
+\urlstyle{same}
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\begin{document}
+$body$
+\end{document}
