@@ -97,6 +97,14 @@ If the student is unsure which of the six subjects their idea belongs to, stop a
 `scripts/mine_winners.py` is the only script; it greps the local archive for prior titles
 matching the topic's keywords. It is an evidence aid, NOT a score generator.
 
+**2026-09-11 verified retrieval pitfall:** the current README branch does not reliably enforce
+`--subject` (its mismatch branch falls through), and keyword matching is substring-based across
+the entire Markdown line: `exit` can match `Brexit`. Before citing/counting a hit, read the
+original README subject and medal headings, verify the title and PDF link, and exclude wrong-
+subject or substring-only matches. Save raw hits and the validated/deduplicated index;
+state whether the linked paper was actually read. A limited `--top` result is not an exhaustive
+archive count. Do not infer method similarity or novelty from title matches alone.
+
 ## Scoring rubric (subject-aware, range-based)
 
 Score five dimensions, each 0–10, then weight. Full math in `references/scoring-rubric.md`.

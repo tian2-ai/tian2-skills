@@ -36,6 +36,7 @@ PLUGINS = {
     "yau": "yau-*",
     "sts": "sts-*",
     "conrad": "conrad-*",
+    "humanizer": "edu-humanizer-zh",
 }
 
 # Files that exist upstream but must not ship: internal planning, scratch notes.

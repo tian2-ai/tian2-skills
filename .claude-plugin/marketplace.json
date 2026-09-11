@@ -39,6 +39,14 @@
       "version": "0.1.0",
       "category": "education",
       "description": "12 个 skill。Conrad 全流程：赛道导航、选题、精益画布、市场与财务、创新简报、知识产权可辩护性、证据构建、评审模拟、路演材料、视频与网站、学术诚信守门、教练运营。"
+    },
+    {
+      "name": "humanizer",
+      "displayName": "中文表达校准",
+      "source": "./plugins/humanizer",
+      "version": "0.4.0",
+      "category": "education",
+      "description": "1 个 skill。edu-humanizer-zh：竞赛教育方向的中文去 AI 味——产品文案、审查报告、家长/学校沟通件的表达校准。家长/学生/学校三种语域、不贩卖焦虑与不承诺获奖的措辞边界、报告语体、「先写后拆」新文案生产流程。基于 ai-zixun/humanizer-zh 与 blader/humanizer（MIT，见 NOTICES.md）。"
     }
   ]
 }

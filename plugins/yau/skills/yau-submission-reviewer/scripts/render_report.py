@@ -104,6 +104,9 @@ def widen_table_delimiters(md_text: str) -> str:
             # cap so one runaway column can't starve the rest
             cap = max(6, int(sum(weights) * 0.34))
             weights = [min(w, cap) for w in weights]
+            # Keep short owner/status fields readable instead of one glyph per line.
+            floor = max(weights) * 0.28
+            weights = [max(w, floor) for w in weights]
             total = sum(weights) or 1
             dashes = [max(3, round(w / total * 120)) for w in weights]
             out[i + 1] = "|" + "|".join("-" * d for d in dashes) + "|"
@@ -175,7 +178,7 @@ def render_html(md_file: Path, out_file: Path, title: str) -> None:
     body = VERDICT_STRONG_RE.sub(lambda m: badge(m.group(1)), body)
     body = VERDICT_TD_RE.sub(lambda m: m.group(1) + badge(m.group(2)), body)
     # wide verdict tables scroll inside their own container
-    body = body.replace("<table>", '<div class="table-scroll"><table>')
+    body = re.sub(r"<table\b[^>]*>", lambda m: '<div class="table-scroll">' + m.group(0), body)
     body = body.replace("</table>", "</table></div>")
 
     css = CSS_FILE.read_text(encoding="utf-8")

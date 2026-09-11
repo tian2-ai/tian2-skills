@@ -1,25 +1,29 @@
 % ==========================================================================
 % Tian2 Report — pandoc + XeLaTeX template (yau skill family deliverables)
-% Brand: cream #F5EDDC page, ink #2C2416 type & linework, coral #E8614C
-% reserved for blocked/★. Serif display headings, sans body, xeCJK Chinese.
+% Brand v2 (2026-09-11): white page, ink #212B2E type, teal #0F6B6E /
+% deep #0B4F52 linework; coral #E8614C reserved for blocked/★.
+% Serif display headings, sans body, xeCJK Chinese.
 % Requires: xelatex, fontspec, xeCJK, longtable, booktabs, fancyhdr, etoolbox
 % ==========================================================================
 \documentclass[11pt,a4paper]{article}
 
 \usepackage{geometry}
+\usepackage{amsmath,amssymb} % pandoc task lists use \square; physics reports use math
 \geometry{top=30mm,bottom=30mm,left=24mm,right=24mm,headheight=16pt}
 
 \usepackage{xcolor}
-\definecolor{cream}{HTML}{F5EDDC}
-\definecolor{creamtwo}{HTML}{EFE4CD}
-\definecolor{ink}{HTML}{2C2416}
-\definecolor{inktwo}{HTML}{4A3E2A}
-\definecolor{inkthree}{HTML}{7A6B53}
+\definecolor{ink}{HTML}{212B2E}
+\definecolor{inktwo}{HTML}{3D4A4E}
+\definecolor{inkthree}{HTML}{6B7A7E}
+\definecolor{tealdeep}{HTML}{0B4F52}  % headings, thick rules
+\definecolor{teal}{HTML}{0F6B6E}      % section bars, links
+\definecolor{steel}{HTML}{5B7C99}     % callout left bar
+\definecolor{linegray}{HTML}{D5DDDF}
 \definecolor{coral}{HTML}{E8614C}   % blocked / ★ only
 \definecolor{mint}{HTML}{8FB89A}
 \definecolor{mustard}{HTML}{D9A441}
 
-\pagecolor{cream}
+% white page (no \pagecolor)
 \color{ink}
 
 % ---------- Fonts: brand first, system fallback, loud \typeout when falling back
@@ -68,12 +72,12 @@
 % ---------- Headings: serif display, ink rules (2.5px ≈ 1.8pt, hairline ≈ 0.7pt)
 \usepackage{titlesec}
 \titleformat{\section}
-  {\displayfont\CJKfamily{zhdisplay}\bfseries\LARGE\color{ink}}{}{0pt}{}
-  [\vspace{3pt}{\color{ink}\hrule height 1.8pt}]
+  {\displayfont\CJKfamily{zhdisplay}\bfseries\LARGE\color{tealdeep}}{}{0pt}{}
+  [\vspace{3pt}{\color{tealdeep}\hrule height 1.8pt}]
 \titlespacing*{\section}{0pt}{1.6em}{0.9em}
 \titleformat{\subsection}
-  {\displayfont\CJKfamily{zhdisplay}\bfseries\large\color{ink}}{}{0pt}
-  {{\color{ink}\hrule height 0.7pt}\vspace{7pt}}
+  {\displayfont\CJKfamily{zhdisplay}\bfseries\large\color{tealdeep}}{}{0pt}
+  {{\color{teal}\rule[-3pt]{3.5pt}{15pt}}\hspace{9pt}}
 \titlespacing*{\subsection}{0pt}{1.7em}{0.7em}
 \titleformat{\subsubsection}
   {\displayfont\CJKfamily{zhdisplay}\bfseries\normalsize\color{ink}}{}{0pt}{}
@@ -85,7 +89,7 @@
 \fancyhf{}
 \fancyhead[L]{\color{inktwo}\sffamily\scriptsize\bfseries $if(header-label)$$header-label$$else$TIAN2 EDUCATION$endif$}
 \fancyhead[R]{\color{inkthree}\sffamily\scriptsize $if(date)$$date$$endif$}
-\renewcommand{\headrule}{{\color{ink}\hrule height 0.7pt width\headwidth}}
+\renewcommand{\headrule}{{\color{teal}\hrule height 1.5pt width\headwidth}}
 \fancyfoot[C]{\color{inktwo}\sffamily\scriptsize — \thepage\ —}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -98,27 +102,32 @@
 \patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
 \makeatother
 \AtBeginEnvironment{longtable}{\footnotesize\linespread{1.18}\selectfont%
-  \setlength{\tabcolsep}{4pt}\arrayrulecolor{ink}}
+  \setlength{\tabcolsep}{4pt}\arrayrulecolor{tealdeep}}
 \setlength{\LTleft}{0pt}
 \setlength{\LTright}{0pt}
 \setlength{\LTpre}{0.8em}
 \setlength{\LTpost}{0.8em}
 % booktabs rules in ink
 \usepackage{colortbl}
-\arrayrulecolor{ink}
+\arrayrulecolor{tealdeep}
 \aboverulesep=0.35ex
 \belowrulesep=0.55ex
 
 % ---------- Blockquote: hairline-left caveat block
 \usepackage{framed}
 \renewenvironment{quote}
-  {\def\FrameCommand{{\color{ink}\vrule width 1.8pt}\hspace{10pt}}%
+  {\def\FrameCommand{{\color{steel}\vrule width 2.2pt}\hspace{10pt}}%
    \MakeFramed{\advance\hsize-\width\FrameRestore}\small\color{inktwo}}
   {\endMakeFramed}
 
 % ---------- Code: colophon footer block
 \usepackage{fvextra}
 \DefineVerbatimEnvironment{verbatim}{Verbatim}{breaklines=true,breakanywhere=true,fontsize=\footnotesize,formatcom=\color{inktwo}}
+% Pandoc fenced code with a language emits Shaded/Highlighting macros.
+$if(highlighting-macros)$
+$highlighting-macros$
+\RecustomVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},breaklines=true,breakanywhere=true,fontsize=\footnotesize}
+$endif$
 
 % ---------- pandoc boilerplate
 \providecommand{\tightlist}{\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}}
@@ -129,7 +138,7 @@
 \makeatother
 
 \usepackage[hidelinks]{hyperref}
-\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=inktwo,citecolor=ink,breaklinks=true}
+\hypersetup{colorlinks=true,linkcolor=tealdeep,urlcolor=teal,citecolor=tealdeep,breaklinks=true}
 \urlstyle{same}
 
 $for(header-includes)$

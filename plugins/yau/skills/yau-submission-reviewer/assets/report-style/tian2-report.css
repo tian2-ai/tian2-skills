@@ -1,8 +1,10 @@
 /* =========================================================================
    Tian2 Report Style — yau skill family unified deliverable stylesheet
-   Brand: warm cream / ink editorial, New Yorker-influenced typography.
-   Cream #F5EDDC · Ink #2C2416 · Coral #E8614C (blocked/★ only)
-   2.5px ink linework · no shadows · no gradients · no emoji ornaments.
+   v2 (2026-09-11): white page, teal linework, editorial serif headings.
+   White #FFFFFF · Ink #212B2E · Teal #0F6B6E / deep #0B4F52
+   Verdict system (unchanged contract): pass=mint #8FB89A ·
+   revise=mustard #D9A441 · blocked/★=coral #E8614C (coral for those ONLY).
+   Callouts steel-blue; tables teal header band + gray zebra; no shadows.
    ========================================================================= */
 
 /* Webfonts: Google Fonts, with local/system fallbacks in every stack.
@@ -12,17 +14,22 @@
 
 :root {
   /* Brand palette — flat fills only */
-  --cream:   #F5EDDC;
-  --cream-2: #EFE4CD;
-  --ink:     #2C2416;
-  --ink-2:   #4A3E2A;
-  --ink-3:   #7A6B53;
+  --paper:     #FFFFFF;
+  --ink:       #212B2E;
+  --ink-2:     #3D4A4E;
+  --ink-3:     #6B7A7E;
+  --teal-deep: #0B4F52;   /* headings, table header band */
+  --teal:      #0F6B6E;   /* section bars, links, accents */
+  --teal-tint: #E8F1F1;   /* light teal fill */
+  --steel:     #5B7C99;   /* callout left bar */
+  --steel-bg:  #EFF4F8;   /* callout background */
+  --zebra:     #F5F7F8;   /* table stripe, code background */
+  --line:      #D5DDDF;   /* hairline gray */
   --coral:   #E8614C;   /* reserved: blocked / ★ dis-qualification level */
   --mint:    #8FB89A;   /* pass */
   --mustard: #D9A441;   /* revise */
-  --stone:   #6B8CAE;
 
-  --stroke: 2.5px;
+  --stroke: 3px;
   --hairline: 1px;
 
   --font-display: 'Playfair Display', 'Noto Serif SC', 'Songti SC', Georgia, serif;
@@ -37,7 +44,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--cream);
+  background: var(--paper);
   color: var(--ink);
   font-family: var(--font-body);
   font-size: 17px;
@@ -46,18 +53,26 @@ html, body {
   font-feature-settings: "onum" 1, "kern" 1, "liga" 1;
 }
 
+/* Brand band across the very top of the page */
+body {
+  border-top: 6px solid var(--teal-deep);
+}
+
 .report {
   max-width: 900px;
+  overflow-wrap: anywhere; /* long source IDs/paths must fit mobile */
+  min-width: 0;
   margin: 0 auto;
-  padding: 56px 40px 72px;
+  padding: 48px 40px 72px;
 }
 
 /* ---------- Masthead rule above the title ---------- */
 .report::before {
   content: "";
   display: block;
-  border-top: var(--stroke) solid var(--ink);
-  margin-bottom: 28px;
+  width: 64px;
+  border-top: var(--stroke) solid var(--teal);
+  margin-bottom: 26px;
 }
 
 /* ---------- Headings: serif display over sans body ---------- */
@@ -67,25 +82,28 @@ h1 {
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: -0.01em;
+  color: var(--teal-deep);
   margin: 0 0 20px;
   padding-bottom: 18px;
-  border-bottom: var(--stroke) solid var(--ink);
+  border-bottom: var(--stroke) solid var(--teal-deep);
 }
 
 h2 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 27px;
+  font-size: 26px;
   line-height: 1.3;
+  color: var(--teal-deep);
   margin: 48px 0 14px;
-  padding-top: 18px;
-  border-top: var(--hairline) solid var(--ink);
+  padding-left: 14px;
+  border-left: 5px solid var(--teal);
 }
 
 h3 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 21px;
+  font-size: 20px;
+  color: var(--ink);
   margin: 32px 0 10px;
 }
 
@@ -94,26 +112,27 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 strong { font-weight: 700; }
 
 a {
-  color: var(--ink);
+  color: var(--teal);
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
   word-break: break-all;
 }
-a:hover { color: var(--ink-2); }
+a:hover { color: var(--teal-deep); }
 
 hr {
   border: 0;
-  border-top: var(--hairline) solid var(--ink);
+  border-top: var(--hairline) solid var(--line);
   margin: 40px 0;
 }
 
 /* ---------- Blockquote: the "pass ≠ approval" caveat ---------- */
 blockquote {
   margin: 18px 0 24px;
-  padding: 10px 22px;
-  border-left: var(--stroke) solid var(--ink);
-  background: var(--cream-2);
+  padding: 12px 22px;
+  border-left: 4px solid var(--steel);
+  border-radius: 0 4px 4px 0;
+  background: var(--steel-bg);
   color: var(--ink-2);
   font-size: 15.5px;
 }
@@ -122,7 +141,7 @@ blockquote p { margin: 0; }
 /* ---------- Lists ---------- */
 ul, ol { margin: 0 0 1.2em; padding-left: 1.6em; }
 li { margin-bottom: 0.45em; }
-li::marker { color: var(--ink-2); }
+li::marker { color: var(--teal); }
 
 /* ---------- Tables: the verdict tables must read clearly ---------- */
 .table-scroll { overflow-x: auto; margin: 18px 0 28px; }
@@ -133,8 +152,7 @@ table {
   min-width: 720px;           /* wide verdict tables scroll, never squash */
   font-size: 14.5px;
   line-height: 1.55;
-  border-top: var(--stroke) solid var(--ink);
-  border-bottom: var(--stroke) solid var(--ink);
+  border-bottom: 2px solid var(--teal-deep);
 }
 
 thead th {
@@ -144,8 +162,9 @@ thead th {
   letter-spacing: 0.04em;
   text-align: left;
   vertical-align: bottom;
-  background: var(--cream-2);
-  border-bottom: 1.5px solid var(--ink);
+  background: var(--teal-deep);
+  color: #fff;
+  border-bottom: 0;
   padding: 10px 12px;
   white-space: nowrap;
 }
@@ -153,8 +172,9 @@ thead th {
 tbody td {
   vertical-align: top;
   padding: 12px 12px;
-  border-bottom: var(--hairline) solid var(--ink-3);
+  border-bottom: var(--hairline) solid var(--line);
 }
+tbody tr:nth-child(even) td { background: var(--zebra); }
 tbody tr:last-child td { border-bottom: 0; }
 
 /* ---------- Verdict badges: pass / revise / blocked ----------
@@ -168,29 +188,30 @@ tbody tr:last-child td { border-bottom: 0; }
   text-transform: uppercase;
   line-height: 1.35;
   padding: 2px 9px;
-  border: 1.5px solid var(--ink);
+  border: 0;
   border-radius: 3px;
   color: var(--ink);
   white-space: nowrap;
 }
 .verdict--pass    { background: var(--mint); }
 .verdict--revise  { background: var(--mustard); }
-.verdict--blocked { background: var(--coral); color: var(--cream); }
+.verdict--blocked { background: var(--coral); color: #fff; }
 
 /* ---------- Code: inline + the colophon footer block ---------- */
 code {
   font-family: var(--font-mono);
   font-size: 0.92em;
-  background: var(--cream-2);
-  border: var(--hairline) solid var(--ink);
-  border-radius: 2px;
+  background: var(--zebra);
+  border: var(--hairline) solid var(--line);
+  border-radius: 3px;
   padding: 0.08em 0.32em;
 }
 
 pre {
-  background: var(--cream-2);
-  border: var(--hairline) solid var(--ink);
-  border-radius: 0;
+  background: var(--zebra);
+  border: var(--hairline) solid var(--line);
+  border-left: 4px solid var(--teal);
+  border-radius: 0 4px 4px 0;
   padding: 18px 22px;
   margin: 36px 0 0;
   overflow-x: auto;
@@ -205,6 +226,7 @@ pre code { background: none; border: 0; padding: 0; font-size: inherit; }
 /* ---------- Print ---------- */
 @media print {
   html, body { background: #fff; font-size: 12pt; }
+  body { border-top-width: 4pt; }
   .report { max-width: none; padding: 0; }
   .report::before { margin-bottom: 14pt; }
   a { color: inherit; text-decoration: none; }
@@ -215,6 +237,7 @@ pre code { background: none; border: 0; padding: 0; font-size: inherit; }
   thead { display: table-header-group; }
   tr, blockquote, pre { break-inside: avoid; }
   h1, h2, h3 { break-after: avoid; }
+  thead th, tbody tr:nth-child(even) td,
   .verdict--pass, .verdict--revise, .verdict--blocked {
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }

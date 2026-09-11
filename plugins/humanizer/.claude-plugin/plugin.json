@@ -1,0 +1,9 @@
+{
+  "name": "humanizer",
+  "version": "0.4.0",
+  "description": "1 个 skill。edu-humanizer-zh：竞赛教育方向的中文去 AI 味——产品文案、审查报告、家长/学校沟通件的表达校准。家长/学生/学校三种语域、不贩卖焦虑与不承诺获奖的措辞边界、报告语体、「先写后拆」新文案生产流程。基于 ai-zixun/humanizer-zh 与 blader/humanizer（MIT，见 NOTICES.md）。",
+  "author": {
+    "name": "Tian2"
+  },
+  "homepage": "https://tian-2.com/"
+}
